@@ -1,6 +1,6 @@
 repo_directory: html
-name: UW SeismoHackweek
-about: Hackweeks are participant-driven events that strive to create welcoming spaces
+name: CyberTraining for Seismology
+about: This training workshop Hackweeks are participant-driven events that strive to create welcoming spaces
   for participants to learn new things, build community and gain hands-on experience
   with collaboration and team science
 apply:
@@ -8,19 +8,18 @@ apply:
   title: Application coming soon
 hackweek_mission: https://uwhackweek.github.io/hackweeks-as-a-service/mission.html
 banner:
-  title: UW Hackweek
+  title: CyberTraining for Seismology
   description: An awesome learning event.
-  start_date: XX Month
-  end_date: XX Month
+  start_date: November 7
+  end_date: November 10
   year: 2022
-  location: Seattle, WA
+  location: Remote
   links:
   - url: intro.html
-    title: Event Jupyter Book
+    title: HPS Jupyter Book
     new_window: false
   image: https://geohackweek.github.io/assets/images/banner.jpg
-applicant_info: UW Hackweek 2022 will take place in October 2022 (virtual or in-person
-  TBD). Applications have not yet opened, but should be anticipated in September 2022.
+applicant_info: The virtual CyberTraining for Seismology will take place in November 2022 . Applications have not yet opened, but should be anticipated in late September 2022.
 team:
   !include book/team.yaml
 schedule:
@@ -28,9 +27,16 @@ schedule:
 sponsors:
   description: ''
   organizations:
-  - name: eScience Institute
+  - name: University of Washington
     website: ''
     logo_url: https://escience.washington.edu/wp-content/uploads/2015/10/Logo_eScience-stacked.png
+  - name: University of California - San Diego
+    website: ''
+    logo_url: https://escience.washington.edu/wp-content/uploads/2015/10/Logo_eScience-stacked.png
+  - name: Southern California Earthquake Center
+    website: ''
+    logo_url: https://escience.washington.edu/wp-content/uploads/2015/10/Logo_eScience-stacked.png
+
 footer:
   social:
   - icon: github
