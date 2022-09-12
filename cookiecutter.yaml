@@ -1,15 +1,15 @@
 repo_directory: html
 name: CyberTraining for Seismology
-about: This training workshop Hackweeks are participant-driven events that strive to create welcoming spaces
+about: This training workshop is dedicated to training  participant-driven events that strive to create welcoming spaces
   for participants to learn new things, build community and gain hands-on experience
   with collaboration and team science
 apply:
   url: 'https://docs.google.com/forms/d/1r2-oe6SDet-SyJP1sgDGcuGChyVisaFxirpqISTWKbE/edit'
   title: Application coming soon
-hackweek_mission: https://uwhackweek.github.io/hackweeks-as-a-service/mission.html
+hackweek_mission: "" #https://uwhackweek.github.io/hackweeks-as-a-service/mission.html
 banner:
   title: CyberTraining for Seismology
-  description: An awesome learning event.
+  description: An learning event for large data and model seismological tools
   start_date: November 7
   end_date: November 10
   year: 2022
@@ -41,7 +41,7 @@ footer:
   social:
   - icon: github
     icon_pack: fab
-    link: https://github.com/uwhackweek/
+    link: https://github.com/SeisSCOPED/
 _copy_without_render:
 - assets
 _extensions:
