@@ -50,3 +50,24 @@ people:
       - Lead CyberTraining Organizer
   # =============
   
+
+  # =============
+  - title: Yiyu Ni
+    avatar: 
+    role: 
+    organizations:
+      - name: 
+      - name: 
+    bio: 
+    expertise:
+      - open science
+      - ML in seismology
+      - Cloud computing
+    social:
+      - icon: github
+        icon_pack: fab
+        link: https://github.com/niyiyu
+    user_groups:
+      - CyberTraining Teaching Assistant
+  # =============
+  
