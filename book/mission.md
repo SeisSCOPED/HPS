@@ -80,7 +80,4 @@ We provide opportunities for people to build their networks.
 We adhere to and enforce a shared Code of Conduct.
 :::
 
-
-[Hackweeks](https://www.pnas.org/content/115/36/8872.short) are participant driven events that have been designed, evaluated and modified over the past 10 years to meet the needs of emerging data science communities. Hackweeks were originally conceived within the [Moore/Sloan Data Science Environment](http://msdse.org/), and borrow ideas from [The Carpentries](https://carpentries.org/). 
-
-Everyone involved in hackweeks, from participants to organizers, commit to our **[Code of Conduct](CoC)**.
+The HPS CyberTraining is designed to teach research-grade software in big-data and big-simulation seismology from the ground up. The tutorials are designed to bring the participants up to speed in computing to tackle large-scale seismological research.  The HPS CyberTraining borrows ideas, templates, and elements of [Hackweeks](https://www.pnas.org/content/115/36/8872.short). The HPS CyberTraining participants and organizers commit to our **[Code of Conduct](CoC)**.
