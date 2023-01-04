@@ -72,10 +72,6 @@
 
 ## Topical (event specific)
 ```{glossary}
-[ICESat-2](https://icesat-2.gsfc.nasa.gov)
-  Ice, Cloud, and land Elevation Satellite (2).
-  Launched in September 2018, the ICESat-2 satellite continues the ICESat and IceBridge missions to
-  collect multi-year elevation data.
-  Mission science goals focus on assessing changing land and sea ice and forest heights.
+
 
   ```

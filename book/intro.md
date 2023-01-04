@@ -1,4 +1,4 @@
-# Welcome to {{HPS CyberTraining}}!
+# Welcome to HPS CyberTraining!
 
 ![banner](img/banner.png)
 
