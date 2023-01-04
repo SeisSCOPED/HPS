@@ -1,5 +1,5 @@
 repo_directory: html
-name: CyberTraining for Seismology
+name: SCEC CyberTraining for Seismology, HPC and Data Science
 about: This training workshop is dedicated to training  participant-driven events that strive to create welcoming spaces
   for participants to learn new things, build community and gain hands-on experience
   with collaboration and team science
@@ -10,16 +10,16 @@ hackweek_mission: "" #https://uwhackweek.github.io/hackweeks-as-a-service/missio
 banner:
   title: CyberTraining for Seismology
   description: An learning event for large data and model seismological tools
-  start_date: November X
-  end_date: November X
-  year: 2022
+  start_date: January 25
+  end_date: March  
+  year: 2023
   location: Remote
   links:
   - url: intro.html
     title: HPS Jupyter Book
     new_window: false
   image: https://geohackweek.github.io/assets/images/banner.jpg
-applicant_info: The virtual CyberTraining for Seismology will take place in November 2022 . Applications have not yet opened, but should be anticipated in late September 2022.
+applicant_info: The virtual CyberTraining for Seismology will take place in February and March 2023 . Applications have not yet opened, but should be anticipated in late September 2022.
 team:
   !include book/team.yaml
 schedule:

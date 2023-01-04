@@ -12,7 +12,7 @@ parse:
   myst_substitutions:
     hackweek: "uwhackweek"
     dates: "October ? to ?, 2021"
-    github_org_url: "https://github.com/uwhackweek"
+    github_org_url: "https://github.com/SeisSCOPED/HPS"
     book_repo: "jupyterbook-template"
     website_url: "https://uwhackweek.github.io/jupyterbook-template"
     jupyterhub_url: "https://INSERT_JUPYTERHUB_URL"

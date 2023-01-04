@@ -12,7 +12,7 @@ parts:
       url: https://uwhackweek.github.io/jupyterbook-template/index.html?jump_to=team
     - file: mission
     - file: CoC
-- caption: Preparation
+- caption: Collaborative Practices in Research Computing
   chapters:
     - file: preliminary/index
       sections:
