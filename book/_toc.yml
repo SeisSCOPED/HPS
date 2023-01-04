@@ -17,27 +17,27 @@ parts:
     - file: preliminary/index
       sections:
         # - file: preliminary/swc
-        # - file: preliminary/github
+        - file: preliminary/github
         # - file: preliminary/jupyterhub
         # - file: preliminary/git
         # - file: preliminary/earthdata
         # - file: preliminary/python
-- caption: Tutorials
-  chapters:
+# - caption: Tutorials
+  # chapters:
     # - file: tutorials/index
-      sections:
+      # sections:
         # - file: tutorials/jupyter
         # - file: tutorials/example/tutorial-notebook
-- caption: Projects
-  chapters:
+# - caption: Projects
+  # chapters:
     # - file: projects/list_of_projects
     # - file: projects/index
-      sections:
+      # sections:
         # - file: projects/project_roles
         # - file: projects/project_roadmap
         # - file: projects/project_initialization
-- caption: Reference
-  chapters:
+# - caption: Reference
+  # chapters:
     # - file: reference/glossary
     # - file: reference/bibliography
     # - file: reference/open_science
