@@ -17,7 +17,7 @@ Our events are often over-subscribed so we ask that you ensure you can attend th
 
 ## Selection Criteria
 
-The hackweek organizing committee follows a two phase process in selecting applicants, adopted from {cite:p}`huppenkothen_entrofy_2020`:
+<!-- The hackweek organizing committee follows a two phase process in selecting applicants, adopted from {cite:p}`huppenkothen_entrofy_2020`: -->
 
 ```{image} img/participant-selection.png
 :alt: participant-selection
