@@ -11,7 +11,7 @@ banner:
   title: CyberTraining for Seismology
   description: An learning event for large data and model seismological tools
   start_date: January 25
-  end_date: March  
+  end_date: March 31
   year: 2023
   location: Remote
   links:
@@ -29,7 +29,7 @@ sponsors:
   organizations:
   - name: University of Washington
     website: ''
-    logo_url: https://escience.washington.edu/wp-content/uploads/2015/10/Logo_eScience-stacked.png
+    logo_url: 
   - name: University of California - San Diego
     website: ''
     logo_url: https://escience.washington.edu/wp-content/uploads/2015/10/Logo_eScience-stacked.png

@@ -9,9 +9,8 @@ We welcome all types of learners to our event, from professional software develo
 
 ## {{hackweek}} Software Carpentry Session
 
-We strongly encourage participants to review this two-day recorded fundamentals of Python and open-source workflows crash course ([Software Carpentry Schedule](swc)) in advance of the hackweek. You may choose whichever topics you'd like to brush up on or learn. Office hours in the weeks leading up the hackweek will provide an opportunity for asking questions and troubleshooting any issues you've encountered.
+We strongly encourage participants to review this two-day recorded fundamentals of Python and open-source workflows crash course ([Software Carpentry Schedule](swc)) in advance of the CyberTraining. You may choose whichever topics you'd like to brush up on or learn. 
 
-You can view our [Software Carpentry Schedule](swc) for more information.
 
 ## Required setup
 
@@ -19,6 +18,11 @@ You can view our [Software Carpentry Schedule](swc) for more information.
 Please make sure to find some time to go through the below material before
 the hackweek.
 ```
+
+
+### Shell Scripting
+
+Everyone attending will be exposed to shell scripting and it will be necessary to have a basic skills. The [Software Carpentries Shell Novice](https://swcarpentry.github.io/shell-novice/) have necessary educational materials to be comfortable for the workshop.
 
 ### GitHub Account
 
@@ -47,13 +51,39 @@ All content of the hackweek will be shared via GitHub and interacting with the
 website will be done via the `git` command. Visit [Setting up the `git` command](git)
 to learn how to configure that!
 
-### EarthData Login
-
-We'll have you download some data from NSIDC for your tutorials and projects.
-Visit our [Earthdata](earthdata) page to learn how to access and Earthdata login account if you don't already have one!
-
 ## Optional setup
 
 ### Python
 Dive deeper into how [Python is managed and installed](python) on the JupyterHub
 and how you can install that on your personal machine.
+
+
+## Software and Editing Carpentries:
+- [Git](https://swcarpentry.github.io/git-novice/): code version control 
+- [Python](http://swcarpentry.github.io/python-novice-gapminder/): coding fundamentals
+- [Latex](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes): Manuscript editing preferred scripting language
+- [Jypyter Notebooks](https://www.earthdatascience.org/courses/intro-to-earth-data-science/open-reproducible-science/jupyter-python/get-started-with-jupyter-notebook-for-python/): jupyter notebook introduction
+- [Conda, Mamba, environment](https://astrobiomike.github.io/unix/conda-intro): nice intro from a biologist on the basics of conda, mamba, and creating a computing environment.
+
+
+## Basic Seismology
+- Please watch this [video](https://www.youtube.com/watch?v=kFwdjfiK4gk) of an introduction to Opbsy.
+- Install Obspy using conda: ```conda install -c conda-forge obspy```
+- [Reading seismograms](https://docs.obspy.org/tutorial/code_snippets/reading_seismograms.html)
+- [Plot waveforms](https://docs.obspy.org/tutorial/code_snippets/waveform_plotting_tutorial.html)
+- [Filter data](https://docs.obspy.org/tutorial/code_snippets/filtering_seismograms.html)
+- [Spectrograms](https://docs.obspy.org/tutorial/code_snippets/plotting_spectrograms.html)
+- [Focal mechanism](https://www.ocean.washington.edu/courses/oc410/reading/Focal_mechanism_primer.pdf)
+
+## Intermediate Seismology
+- [Practice downloading and plotting](https://krischer.github.io/seismo_live_build/html/ObsPy/07_Basic_Processing_Exercise_solution_wrapper.html)
+- [Practice looking at earthquake](https://krischer.github.io/seismo_live_build/html/ObsPy/08_Exercise__2008_MtCarmel_Earthquake_and_Aftershock_Series_solution_wrapper.html)
+
+Fantastic est of video tutorials by the ROSES program. Note that every year has slightly different topics.
+- Offering in [2020](https://connect.agu.org/seismology/roses/roses2020materials) and their [Github](https://github.com/roseseismo/roses2020)
+- Offering in [2021](https://connect.agu.org/seismology/roses/roses2021materials), and their [Github](https://github.com/roseseismo/roses2021)
+  
+
+## Experts in Computing and Seismomlogy
+- Cloud computing video tutorials:
+    - https://www.youtube.com/watch?v=0hGoK1SdBm4: get started on AWS-EC2 (by our own Julian Schmidt!)
