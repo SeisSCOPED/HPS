@@ -36,10 +36,10 @@ parts:
         # - file: projects/project_roles
         # - file: projects/project_roadmap
         # - file: projects/project_initialization
-# - caption: Reference
-  # chapters:
-    # - file: reference/glossary
-    # - file: reference/bibliography
-    # - file: reference/open_science
-    # - file: reference/open_source_software
-    # - file: reference/questions
+- caption: Reference
+  chapters:
+    - file: reference/glossary
+    - file: reference/bibliography
+    - file: reference/open_science
+    - file: reference/open_source_software
+    - file: reference/questions
