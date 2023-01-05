@@ -15,13 +15,13 @@ parts:
 - caption: Preliminary Resources
   chapters:
     - file: preliminary/index
-      # sections:
-        # - file: preliminary/swc
-        # - file: preliminary/github
-        # - file: preliminary/jupyterhub
-        # - file: preliminary/git
+      sections:
+        - file: preliminary/swc
+        - file: preliminary/github
+        - file: preliminary/jupyterhub
+        - file: preliminary/git
         # - file: preliminary/earthdata
-        # - file: preliminary/python
+        - file: preliminary/python
 # - caption: Tutorials
   # chapters:
     # - file: tutorials/index
