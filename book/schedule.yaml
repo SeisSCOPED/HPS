@@ -22,11 +22,57 @@ tabs:
     location: Zoom Room
     title: Software Best Practices
     description: Software best practices, conda, containers, github
+    leads: 
+    - Marine Denolle, Ian Wang, Alice Gabriel
     resources:
       - title: "HPS CyberTraining: Software Best Practices"
         url: https://youtu.be/?      
+
+  - time: 11:00 - 12:00
+    location: Zoom Room
+    title: Parallelisation Strategies
+    description: Course on strategies for multi processing, shared memory, distributed memory, horizontal vs vertical scaling
     leads: 
     - Marine Denolle, Ian Wang, Alice Gabriel
+    resources:
+      - title: "HPS CyberTraining: Parallelisation"
+        url: https://youtu.be/?      
+
+
+  - time: 12:00 - 13:00
+    location: off/on zoom
+    title: Lunch Break
+    description: break
+
+
+  - time: 13:00 - 14:00
+    location: Zoom Room
+    title: HPC Systems
+    description: How to get on HPC systems, getting allocations, monitoring jobs, etc
+    leads: 
+    - Marine Denolle, Ian Wang, Alice Gabriel
+    resources:
+      - title: "HPS CyberTraining: HPC Systems"
+        url: https://youtu.be/?      
+
+  - time: 14:00 - 15:00
+    location: off/on zoom
+    title: Lunch Break
+    description: break
+
+  - time: 15:00 - 16:30
+    location: Zoom Room
+    title: Cloud Systems
+    description: What cloud computing is, and a toy problem on AWS EC2+S3
+    leads: 
+    - Rob Fatland, Naomi Alterman, Marine Denolle
+    resources:
+      - title: "HPS CyberTraining: Cloud Systems"
+        url: https://youtu.be/?      
+
+
+
+
 - title: Day 2
   date: Thu 13, Oct
   contents:
