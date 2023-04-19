@@ -1,8 +1,8 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: HPS CyberTraining
-author: Marine Denolle, eScience Institute, University of Washington
+title: Hackweek Template
+author: eScience Institute, University of Washington
 logo: logo.png
 only_build_toc_files: true
 
@@ -10,16 +10,16 @@ parse:
   # https://jupyterbook.org/content/content-blocks.html?highlight=myst%20substitution#define-substitutions-for-your-whole-book
   # https://jupyterbook.org/content/content-blocks.html#using-substitutions-in-links
   myst_substitutions:
-    hackweek: "2023 HPS CyberTraining"
-    dates: "May 2023"
+    hackweek: "HPS CyberTraining"
+    dates: "February and March 2023"
     github_org_url: "https://github.com/SeisSCOPED/HPS"
     book_repo: "jupyterbook-template"
     website_url: "hhttps://seisscoped.org/HPS/intro.html"
-   # jupyterhub_url: "https://INSERT_JUPYTERHUB_URL"
-    slack_workspace_url: "https://seismoscoped.slack.com/archives/C04HKQYK0QM"
-    #docker_image: "https://INSERT_DOCKER_IMAGE_URL"
+    jupyterhub_url: "https://INSERT_JUPYTERHUB_URL"
+    slack_workspace_url: "https://INSERT_SLACK_URL"
+    docker_image: "https://INSERT_DOCKER_IMAGE_URL"
     contact_email: "seisscoped@github.com"
-    dataset: "SCEDC"
+    dataset: "SCSN"
     anon_reporting_url: "https://INSERT_FORM_LINK"
     project_spreadsheet_url: "https://INSERT_GOOGLE_SHEET"
   myst_enable_extensions:
