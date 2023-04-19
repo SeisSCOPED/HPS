@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this book, please cite it as below."
-title: "[Event Name] Hackweek JupyterBook Tutorials"
-version: 2021.??.??
-date-released: "2021-??-??"
+title: "HPS CyberTraining JupyterBook Tutorials"
+version: 2023.04.19
+date-released: "2023-04-19"
 identifiers:
 - description: "collection of archived snapshots of all versions"
   type: doi
@@ -10,20 +10,19 @@ identifiers:
   license: MIT
   repository-code: TODO
 authors:
-- family-names: Henderson
-  given-names: Scott
-  orcid: "https://orcid.org/0000-0003-0624-4965"
+- family-names: Denolle
+  given-names: Marine
+  orcid: "https://orcid.org/0000-0002-1610-2250"
   affiliation: University of Washington
-- family-names: Arendt
-  given-names: Anthony
-  orcid: "https://orcid.org/0000-0003-0429-6905"
-  affiliation: University of Washington
-- family-names: Scheick
-  given-names: Jessica
-  affiliation: University of New Hampshire
-  orcid: "https://orcid.org/0000-0002-3421-4459"
+- family-names: Gabriel
+  given-names: Alice-Agnes
+  orcid: "https://orcid.org/0000-0003-0112-8412"
+  affiliation: University of California - San Diego
 
 keywords:
-- NASA
-- Hackweek
+- SCOPED
+- SCEC
+- MTMOD
 - Python
+- Seismology
+- big data

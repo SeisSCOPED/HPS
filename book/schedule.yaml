@@ -1,23 +1,32 @@
-timezone: UTC -7 (Pacific Daylight Time)
+timezone: UTC -7 (Pacific Time)
 tabs:
 - title: Day 1
-  date: X X, Nov
+  date: May 9, 2023
   contents:
-  - time: 9:00 - 10:00
+  - time: 8:45 - 9:15
     location: Zoom Room
-    title: Best Practices And Tips For Research Software
+    title: Welcome and Set up
+    description: Welcome to the workshop, Introductions
+    leads:
+    - Marine Denolle, Alice Gabriel
+  - time: 9:15 - 10:00
+    location: Zoom Room
+    title: Open Science lecture
     description: A talk about reproducible research
     leads:
-    - Marine Denolle, William Savran, Alice Gabriel
+    - Marine Denolle, Alice Gabriel, David May
     resources:
-      - title: "SCEC CyberTraining: Introductory Section"
+      - title: "HPS CyberTraining: Open Science"
         url: https://youtu.be/?
-  - time: 10:00 - 10:20
-    location: Off zoom
-    title: Coffee Break
-    description: Have a break!
-      
-    leads: []
+  - time: 10:00 - 11:00
+    location: Zoom Room
+    title: Software Best Practices
+    description: Software best practices, conda, containers, github
+    resources:
+      - title: "HPS CyberTraining: Software Best Practices"
+        url: https://youtu.be/?      
+    leads: 
+    - Marine Denolle, Ian Wang, Alice Gabriel
 - title: Day 2
   date: Thu 13, Oct
   contents:
