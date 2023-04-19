@@ -35,8 +35,7 @@ tabs:
     leads: 
     - Marine Denolle, Ian Wang, Alice Gabriel
     resources:
-      - title: "HPS CyberTraining: Parallelisation"
-    #    url: https://youtu.be/?      
+      - title: "HPS CyberTraining: Parallelisation"    
 
 
   - time: 12:00pm - 1:00pm
@@ -53,7 +52,6 @@ tabs:
     - Marine Denolle, Ian Wang, Alice Gabriel
     resources:
       - title: "HPS CyberTraining: HPC Systems"
-        #url: https://youtu.be/?      
 
   - time: 2:00pm - 3:00pm
     location: off/on zoom
@@ -67,8 +65,7 @@ tabs:
     leads: 
     - Rob Fatland, Naomi Alterman, Marine Denolle
     resources:
-      - title: "HPS CyberTraining: Cloud Systems"
-     #  url: https://youtu.be/?      
+      - title: "HPS CyberTraining: Cloud Systems"     
 
 
 - title: Day 2
@@ -87,7 +84,6 @@ tabs:
     - Marine Denolle
     resources:
       - title: "HPS CyberTraining: Cloud Systems"
-     #  url: https://youtu.be/?  
       
 - title: Day 3
   date: X X, Nov
