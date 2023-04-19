@@ -1,15 +1,15 @@
 timezone: UTC -7 (Pacific Time)
 tabs:
 - title: Day 1
-  date: May 9, 2023
+  date: Tuesday May 9, 2023
   contents:
-  - time: 8:45 - 9:15
+  - time: 8:45am - 9:15am
     location: Zoom Room
     title: Welcome and Set up
     description: Welcome to the workshop, Introductions
     leads:
     - Marine Denolle, Alice Gabriel
-  - time: 9:15 - 10:00
+  - time: 9:15am - 10:00am
     location: Zoom Room
     title: Open Science lecture
     description: A talk about reproducible research
@@ -18,7 +18,7 @@ tabs:
     resources:
       - title: "HPS CyberTraining: Open Science"
         url: https://youtu.be/?
-  - time: 10:00 - 11:00
+  - time: 10:00am - 11:00am
     location: Zoom Room
     title: Software Best Practices
     description: Software best practices, conda, containers, github
@@ -28,7 +28,7 @@ tabs:
       - title: "HPS CyberTraining: Software Best Practices"
         url: https://youtu.be/?      
 
-  - time: 11:00 - 12:00
+  - time: 11:00am - 12:00pm
     location: Zoom Room
     title: Parallelisation Strategies
     description: Course on strategies for multi processing, shared memory, distributed memory, horizontal vs vertical scaling
@@ -39,13 +39,13 @@ tabs:
         url: https://youtu.be/?      
 
 
-  - time: 12:00 - 13:00
+  - time: 12:00pm - 1:00pm
     location: off/on zoom
     title: Lunch Break
     description: break
 
 
-  - time: 13:00 - 14:00
+  - time: 1:00pm - 2:00pm
     location: Zoom Room
     title: HPC Systems
     description: How to get on HPC systems, getting allocations, monitoring jobs, etc
@@ -55,12 +55,12 @@ tabs:
       - title: "HPS CyberTraining: HPC Systems"
         url: https://youtu.be/?      
 
-  - time: 14:00 - 15:00
+  - time: 2:00pm - 3:00pm
     location: off/on zoom
     title: Lunch Break
     description: break
 
-  - time: 15:00 - 16:30
+  - time: 3:00pm - 4:30pm
     location: Zoom Room
     title: Cloud Systems
     description: What cloud computing is, and a toy problem on AWS EC2+S3
@@ -71,12 +71,10 @@ tabs:
         url: https://youtu.be/?      
 
 
-
-
 - title: Day 2
-  date: Thu 13, Oct
+  date: Wednesday May 10
   contents:
-  - time: 9:00 - 10:00 PM
+  - time: 8:45 - 9:00 AM
     title: Coffee Break
     description: |
       
