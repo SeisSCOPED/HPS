@@ -9,7 +9,7 @@ apply:
 hackweek_mission: "" #https://uwhackweek.github.io/hackweeks-as-a-service/mission.html
 banner:
   title: CyberTraining for Seismology
-  description: An learning event for large data and model seismological tools
+  description: A learning event for large data and model seismological tools
   start_date: January 25
   end_date: March 31
   year: 2023
@@ -19,7 +19,7 @@ banner:
     title: HPS Jupyter Book
     new_window: false
   image: https://geohackweek.github.io/assets/images/banner.jpg
-applicant_info: The virtual CyberTraining for Seismology will take place in February and March 2023 . Applications have not yet opened, but should be anticipated in late September 2022.
+applicant_info: The virtual CyberTraining for Seismology will take place in February and March 2023 . Applications have not yet opened.
 team:
   !include book/team.yaml
 schedule:
