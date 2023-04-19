@@ -49,7 +49,6 @@ surface for the breadth and depth of options and are meant to kick things off:
    Packages/Documentation:
    * [PyTest](https://docs.pytest.org/en/latest/)
    * [Python Hitchhiker's guide](https://docs.python-guide.org/writing/tests/)
-   * [Travis CI](https://travis-ci.org/)
    * [GitHub Actions](https://github.com/features/actions)
    
 1. Documentation
@@ -75,7 +74,9 @@ surface for the breadth and depth of options and are meant to kick things off:
 1. License
 
    The legal aspect for your project.
-   Good source to figure out the right license: https://tldrlegal.com/
+   Good source to figure out the right license:
+   * [TDLRLegal]https://tldrlegal.com/
+   * [ChooseALicense](https://choosealicense.com/)
 
 1. Publishing your package
 
