@@ -7,7 +7,7 @@ description:
 # - For 'avatar' an easy option is to use the URL for your GitHub user image: https://api.github.com/users/YOUR_GITHUB_USERNAME
 people:
   - title: Marine Denolle
-    avatar: https://api.github.com/users/mdenolle
+    # avatar: https://api.github.com/users/mdenolle
     role: Assistant Professor
     organizations:
       - name: University of Washington
