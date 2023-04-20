@@ -195,3 +195,30 @@ tabs:
 
 - title: Day 4
   date: Friday May 12
+
+  contents:
+  - time: 8:45 - 9:00 AM
+    title: "Welcome Coffee :coffee:"
+    description: Welcome and check-in for docker
+
+
+  - time: 9:00 AM - 12:00 PAM
+    location: Zoom Room
+    title:  SeisSol
+    description: Earthquake Dynamics in 3D, tutorial on SeisSol
+    leads: 
+    - Alice Gabriel
+    resources:
+      - title: "HPS CyberTraining: SeisSol"
+        url: # link to google slides and link to youtube channel
+
+
+  - time: 12:00 PM - 1:00 PAM
+    location: Off Zoom Room
+    title:  Lunch Break
+    description: Wavefield Simulations using SPECFEM3D
+    leads: 
+    -  Carl Tape
+    resources:
+      - title: "HPS CyberTraining: SPECFEM"
+        url: # link to google slides and link to youtube channel
