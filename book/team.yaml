@@ -60,7 +60,6 @@ people:
       - name: University of Washington
     bio: 
     expertise:
-      - open science
       - ML in seismology
       - Cloud computing
     social:
