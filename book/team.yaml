@@ -47,7 +47,7 @@ people:
         icon_pack: fab
         link: https://github.com/?
     user_groups:
-      - Lead CyberTraining Organizer
+      - Lead Organizer
   # =============
   
 
@@ -68,7 +68,7 @@ people:
         icon_pack: fab
         link: https://github.com/niyiyu
     user_groups:
-      - CyberTraining Teaching Assistant
+      - Teaching Assistant
   # =============
   
   # - title: Ian Wang
