@@ -23,6 +23,10 @@ parts:
         # - file: preliminary/earthdata
         - file: preliminary/python
     - file: preliminary_seismo/index
+
+- caption: Soft and Hardware
+  chapters:
+    - file: softhardware/index
 # - caption: Tutorials
   # chapters:
     # - file: tutorials/index
