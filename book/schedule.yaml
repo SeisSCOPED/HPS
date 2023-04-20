@@ -108,18 +108,90 @@ tabs:
         url: # link to google slides, Jbook, and link to youtube channel
       
 
-  # - time: 10:45 AM - 11:00 AM
-  #   location: Off/Zoom Room
-  #   title:  Break Coffee
-  #   description: break
-  #   leads: 
+  - time: 12:00 PM - 1:00 PM
+    location: Off Zoom Room
+    title:  Lunch Break
+    description: Lunch Break
 
-  # - time: 12:00 PM - 1:00 PM
-  #   location: Off Zoom Room
-  #   title:  Lunch Break
-  #   # description: NoisePy4DAS tutorial
+
+  - time: 2:00 AM - 4:00 PM
+    location: Zoom Room
+    title:  ML Workflows for Earthquake Detection and Phase picking
+    description: Tutorial to train,test,deploy detection and phase picking using ML models, Seisbench
+    leads: 
+    - Congcong Yuan, Yiyu Ni
+    resources:
+      - title: "HPS CyberTraining: ML Earthquake Detection and Phase Picking"
+        url: # link to google slides, Jbook, and link to youtube channel
+      
 
 - title: Day 3
-  date: X X, Nov
+  date: Thursday May 11
+  contents:
+  - time: 8:45 - 9:00 AM
+    title: "Welcome Coffee :coffee:"
+    description: Welcome
+
+
+  - time: 9:00 AM - 10:00 AM
+    location: Zoom Room
+    title:  SCEC Commnity Models access
+    description: Tutorial on accessing the SCEC community X models
+    leads: 
+    - Mei-Hui Su, Phil Maechling
+    resources:
+      - title: "HPS CyberTraining: SCEC CXM"
+        url: # link to google slides and link to youtube channel
+
+
+  - time: 10:00 AM - 11:00 AM
+    location: Off Zoom Room
+    title:  Coffee Break
+    description: Coffee Break
+
+  - time: 11:00 AM - 12:00 PM
+    location: Zoom Room
+    title:  SCEC GMSV
+    description: Tutorial on Ground Motion Simulation Validation (GSMV) Software
+    leads: 
+    - Fabio Silva, Phil Maechling
+    resources:
+      - title: "HPS CyberTraining: SCEC GSMV"
+        url: # link to google slides and link to youtube channel
+
+  - time: 12:00 PM - 1:00 PM
+    location: Off Zoom Room
+    title:  Lunch Break
+    description: Lunch Break
+
+
+  - time: 1:00 PM - 2:00 PM
+    location: Zoom Room
+    title:  SCEC CyberShake
+    description: CyberShake Project, What it is, and how to access the data
+    leads: 
+    - Scott Callaghan
+    resources:
+      - title: "HPS CyberTraining: SCEC CyberShake"
+        url: # link to google slides and link to youtube channel
+
+
+  - time: 2:00 PM - 3:00 PM
+    location: Off Zoom Room
+    title:  Coffee Break
+    description: Coffee Break
+
+
+  - time: 3:00 PM - 4:00 PM
+    location: Zoom Room
+    title:  SCEC PyCSEP
+    description: Earthquake Forecasting Methods and Tools (PyCSEP tutorial)
+    leads: 
+    - Phil Maechling, Max Werner, Fabio Silva
+    resources:
+      - title: "HPS CyberTraining: SCEC PyCSEP"
+        url: # link to google slides and link to youtube channel
+
+
 - title: Day 4
-  date: X X, Nov
+  date: Friday May 12
