@@ -216,6 +216,11 @@ tabs:
   - time: 12:00 PM - 1:00 PAM
     location: Off Zoom Room
     title:  Lunch Break
+
+
+  - time: 1:00 PAM - 3:00 PAM
+    location: Zoom Room
+    title:  SPECFEM
     description: Wavefield Simulations using SPECFEM3D
     leads: 
     -  Carl Tape
