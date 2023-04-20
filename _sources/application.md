@@ -2,6 +2,7 @@
 
 We are glad you are interested in applying to participate in {{hackweek}}! 
 
+Please apply [here](https://docs.google.com/forms/d/e/1FAIpQLScTr-WeVqcNB4ZyrdhWxsVHpC1CQ-oL1pAv33NZ1Gz8HIlmig/viewform?usp=sf_link)
 
 ## Considerations
 
