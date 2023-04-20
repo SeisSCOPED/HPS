@@ -1,8 +1,8 @@
 repo_directory: html
-name: SCEC CyberTraining for Seismology, HPC and Data Science
+name: 2023 High Performance Seismology CyberTraining, running large-scale computation on HPC and Cloud.
 about: This training workshop is dedicated to training  participant-driven events that strive to create welcoming spaces
   for participants to learn new things, build community and gain hands-on experience
-  with collaboration and team science
+  with collaboration and team science.
 apply:
   url: 'https://docs.google.com/forms/d/e/1FAIpQLScTr-WeVqcNB4ZyrdhWxsVHpC1CQ-oL1pAv33NZ1Gz8HIlmig/viewform?usp=sf_link'
   title: Apply Here
@@ -18,7 +18,7 @@ banner:
   - url: intro.html
     title: HPS Jupyter Book
     new_window: false
-  image: https://geohackweek.github.io/assets/images/banner.jpg
+  image: #https://geohackweek.github.io/assets/images/banner.jpg
 applicant_info: The virtual CyberTraining for Seismology will take place in May 2023.
 team:
   !include book/team.yaml
