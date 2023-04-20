@@ -28,7 +28,7 @@ people:
         icon_pack: fab
         link: https://github.com/Denolle-Lab
     user_groups:
-      - Lead Organizer
+      - Organizer Lead
       - Tutorial Lead
   # =============
   - title: Alice Gabriel
@@ -47,7 +47,8 @@ people:
         icon_pack: fab
         link: https://github.com/?
     user_groups:
-      - Lead Organizer
+      - Organizer Lead
+      - Tutorial Lead
   # =============
   
 
@@ -69,6 +70,7 @@ people:
         link: https://github.com/niyiyu
     user_groups:
       - Teaching Assistant
+      - Tutorial Lead
   # =============
   
   # - title: Ian Wang
@@ -91,3 +93,5 @@ people:
   #     - icon: github
   #       icon_pack: fab
   #       link: https://github.com/mspass-team
+    # user_groups:
+    #   - Instructor
