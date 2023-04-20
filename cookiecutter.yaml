@@ -4,14 +4,14 @@ about: This training workshop is dedicated to training  participant-driven event
   for participants to learn new things, build community and gain hands-on experience
   with collaboration and team science
 apply:
-  url: 'https://docs.google.com/forms/d/1r2-oe6SDet-SyJP1sgDGcuGChyVisaFxirpqISTWKbE/edit'
+  url: 'https://docs.google.com/forms/d/e/1FAIpQLScTr-WeVqcNB4ZyrdhWxsVHpC1CQ-oL1pAv33NZ1Gz8HIlmig/viewform?usp=sf_link'
   title: Application coming soon
 hackweek_mission: "" #https://uwhackweek.github.io/hackweeks-as-a-service/mission.html
 banner:
   title: CyberTraining for Seismology
   description: A learning event for large data and model seismological tools
-  start_date: January 25
-  end_date: March 31
+  start_date: Tuesday May 9
+  end_date: Friday May 12
   year: 2023
   location: Remote
   links:
@@ -19,7 +19,7 @@ banner:
     title: HPS Jupyter Book
     new_window: false
   image: https://geohackweek.github.io/assets/images/banner.jpg
-applicant_info: The virtual CyberTraining for Seismology will take place in February and March 2023 . Applications have not yet opened.
+applicant_info: The virtual CyberTraining for Seismology will take place in May 2023.
 team:
   !include book/team.yaml
 schedule:
