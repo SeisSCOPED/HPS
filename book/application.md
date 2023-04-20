@@ -8,14 +8,18 @@ Come back soon to apply!
 
 ## Considerations
 
-Hackweeks are participant-driven events that encourage collaboration and teamwork. We welcome people from a diverse range of career stages, experience levels, backgrounds and identities.
-
-Participant selection will be made with the goal of enhancing the diversity of our communities and building lasting connections that foster open science and data sharing.
-
-Our events are often over-subscribed so we ask that you ensure you can attend the majority of our sessions during {{dates}} before applying.
+This workshop targets the seismologists who want to learn new tools to process and model at large scale seismological research. The participants will work with Docker, GitHub, Python, Shell on laptops, HPC, and Cloud systems.
 
 
 ## Selection Criteria
+
+Participants will be selected based on:
+* Their availability and commitment to attend the week of the workshop (the training will be made available online later for everyone interested)
+* Their interest in seismological research or expertise in using CyberInfrastructure (HPC + Big Data)
+* Space limitations (computing allocations limited to 20 participants per platform)
+
+We seek a broad representation across levels and demography,
+
 
 <!-- The hackweek organizing committee follows a two phase process in selecting applicants, adopted from {cite:p}`huppenkothen_entrofy_2020`: -->
 
