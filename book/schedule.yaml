@@ -80,16 +80,45 @@ tabs:
     description: Welcome
 
 
-  - time: 9:00 AM - 10:00 AM
+  - time: 9:00 AM - 10:45 AM
     location: Zoom Room
     title:  Ambient Noise Seismology
-    description: Ambient field studies
+    description: Ambient field studies, cross correlation, NoisePy tutorial
     leads: 
     - Marine Denolle
     resources:
-      - title: "HPS CyberTraining: Cloud Systems"
-        url:
+      - title: "HPS CyberTraining: Ambient Noise Seismology"
+        url: # link to google slides and link to youtube channel
+
+
+  - time: 10:45 AM - 11:00 AM
+    location: Off/Zoom Room
+    title:  Break Coffee
+    description: break
+    leads: 
+
+  - time: 11:00 AM - 12:00 PM
+    location: Zoom Room
+    title:  Ambient Noise Cross Correlation for Distributed Acoustic Sensing
+    description: NoisePy4DAS tutorial
+    leads: 
+    - Yiyu Ni, Marine Denolle
+    resources:
+      - title: "HPS CyberTraining: Ambient Cross correlation and DAS"
+        url: # link to google slides, Jbook, and link to youtube channel
       
+
+  - time: 10:45 AM - 11:00 AM
+    location: Off/Zoom Room
+    title:  Break Coffee
+    description: break
+    leads: 
+
+  - time: 12:00 PM - 1:00 PM
+    location: Off Zoom Room
+    title:  Lunch Break
+    # description: NoisePy4DAS tutorial
+
 - title: Day 3
   date: X X, Nov
 - title: Day 4
