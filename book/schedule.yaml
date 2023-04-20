@@ -97,15 +97,15 @@ tabs:
     description: break
     # leads: 
 
-  # - time: 11:00 AM - 12:00 PM
-  #   location: Zoom Room
-  #   title:  Ambient Noise Cross Correlation for Distributed Acoustic Sensing
-  #   description: NoisePy4DAS tutorial
-  #   leads: 
-  #   - Yiyu Ni, Marine Denolle
-  #   resources:
-  #     - title: "HPS CyberTraining: Ambient Cross correlation and DAS"
-  #       url: # link to google slides, Jbook, and link to youtube channel
+  - time: 11:00 AM - 12:00 PM
+    location: Zoom Room
+    title:  Ambient Noise Cross Correlation for Distributed Acoustic Sensing
+    description: NoisePy4DAS tutorial
+    leads: 
+    - Yiyu Ni, Marine Denolle
+    resources:
+      - title: "HPS CyberTraining: Ambient Cross correlation and DAS"
+        url: # link to google slides, Jbook, and link to youtube channel
       
 
   # - time: 10:45 AM - 11:00 AM
