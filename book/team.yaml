@@ -54,11 +54,10 @@ people:
 
   # =============
   - title: Yiyu Ni
-    avatar: 
-    role: 
+    avatar: https://avatars.githubusercontent.com/niyiyu
+    role: Graduate Student
     organizations:
-      - name: 
-      - name: 
+      - name: University of Washington
     bio: 
     expertise:
       - open science

@@ -3,7 +3,7 @@
 root: intro
 format: jb-book
 parts:
-- caption: Details
+- caption: Workshop Details
   chapters:
     - file: application
     - title: Schedule
