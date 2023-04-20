@@ -202,7 +202,7 @@ tabs:
     description: Welcome and check-in for docker
 
 
-  - time: 9:00 AM - 12:00 PAM
+  - time: 9:00 AM - 12:00 PM
     location: Zoom Room
     title:  SeisSol
     description: Earthquake Dynamics in 3D, tutorial on SeisSol
@@ -213,12 +213,12 @@ tabs:
         url: # link to google slides and link to youtube channel
 
 
-  - time: 12:00 PM - 1:00 PAM
+  - time: 12:00 PM - 1:00 PM
     location: Off Zoom Room
     title:  Lunch Break
 
 
-  - time: 1:00 PAM - 3:00 PAM
+  - time: 1:00 PM - 3:00 PM
     location: Zoom Room
     title:  SPECFEM
     description: Wavefield Simulations using SPECFEM3D
@@ -226,4 +226,18 @@ tabs:
     -  Carl Tape
     resources:
       - title: "HPS CyberTraining: SPECFEM"
+        url: # link to google slides and link to youtube channel
+
+
+- title: Day N+1
+  date: Friday May 22?
+  contents:
+  - time: 9:00AM - 10:30am
+    location: Zoom Room
+    title:  SPECUFEX
+    description: Unsupervised learning by finger printing seismic signals
+    leads: 
+    -  Theresa Sawi, Nick Smoczyk, Marine Denolle
+    resources:
+      - title: "HPS CyberTraining: SPECUFEX"
         url: # link to google slides and link to youtube channel
