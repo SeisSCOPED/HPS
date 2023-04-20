@@ -27,9 +27,12 @@ schedule:
 sponsors:
   description: ''
   organizations:
+  - name: Southern California Earthquake Center
+    website: ''
+    logo_url: https://github.com/SeisSCOPED/HPS/assets/scec_logo.png
   - name: University of Washington
     website: ''
-    logo_url: https://github.com/SeisSCOPED/HPS/tree/main/book/img/W-Logo_Purple_RGB.png
+    logo_url: https://github.com/SeisSCOPED/HPS/assets/W-Logo_Purple_RGB.png
   - name: University of California - San Diego
     website: ''
     logo_url: https://escience.washington.edu/wp-content/uploads/2015/10/Logo_eScience-stacked.png
