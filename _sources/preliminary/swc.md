@@ -2,9 +2,7 @@
 
 [Software Carpentry](https://software-carpentry.org) is a fantastic organization that teaches basic lab skills for research computing.
 
-For past hackweeks we have offered unofficial, abbreviated 2-day software carpentry trainings to help everyone gain skills in fundamental data science tools (Git, Linux Terminal, Python). By offering this work in advance of the hackweek we can maximize the amount of time we get to focus on more advanced topics.
-
-Below you will find links to our training materials from the 2021 SnowEx Hackweek. If you are new to Git, Linux, Python, please set aside a day or two to go over these materials in advance:
+If you are new to Git, Linux, Python, please set aside a day or two to go over these materials in advance.
 
 ## Getting ready
 
@@ -20,11 +18,11 @@ We encourage you to test your [connection to JupyterHub](jupyterhub) before the 
 
 ### Jupyter, Git, and Unix Shell
 
-#### [Link to video of Day 1 tutorial](https://www.youtube.com/watch?v=F8VhkKwCx0k)
-
-We'll be using these lessons:
+We recommend the following these lessons:
 * http://swcarpentry.github.io/shell-novice/
 * http://swcarpentry.github.io/git-novice/
+
+Below is an example of a time schedule if you choose to take these self-guided lessons:
 
 | Time | Topic |
 | ----- | ----- |
@@ -36,8 +34,6 @@ We'll be using these lessons:
 | 10:45 AM to 12:45 PM | Git/GitHub ([Topics 1 to 5](http://swcarpentry.github.io/git-novice/)) |
 
 ### Python Programming Language
-
-#### [Link to video of Day 2 tutorial](https://www.youtube.com/watch?v=OhzHoGe9ZeI)
 
 We'll be using this lesson:
 * http://swcarpentry.github.io/python-novice-gapminder/
