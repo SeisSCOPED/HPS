@@ -22,6 +22,7 @@ parts:
         - file: preliminary/git
         # - file: preliminary/earthdata
         - file: preliminary/python
+    - file: preliminary_seismo/index
 # - caption: Tutorials
   # chapters:
     # - file: tutorials/index
