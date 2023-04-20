@@ -73,25 +73,26 @@ people:
       - Tutorial Lead
   # =============
   
-  # - title: Ian Wang
-  #   avatar: https://avatars.githubusercontent.com/u/22849821
-  #   role: Manager of HPC Performance & Architectures
-  #   organizations:
-  #     - name: The University of Texas at Austin
-  #     - name: Texas Advanced Computing Center
-  #   bio: Ian is a seismologist and a computer scientist. 
-  #     His research focuses include seismic data processing, seismic imaging, HPC containers, and performance analysis and optimization on HPC systems.
-  #   expertise:
-  #     - signal processing
-  #     - receiver function
-  #     - high-performance computing
-  #     - containers
-  #   social:
-  #     - icon: github
-  #       icon_pack: fab
-  #       link: https://github.com/wangyinz
-  #     - icon: github
-  #       icon_pack: fab
-  #       link: https://github.com/mspass-team
-    # user_groups:
-    #   - Instructor
+  - title: Ian Wang
+    avatar: https://avatars.githubusercontent.com/u/22849821
+    role: Manager of HPC Performance & Architectures
+    organizations:
+      - name: The University of Texas at Austin
+      - name: Texas Advanced Computing Center
+    bio: Ian is a seismologist and a computer scientist. 
+      His research focuses include seismic data processing, seismic imaging, HPC containers, and performance analysis and optimization on HPC systems.
+    expertise:
+      - signal processing
+      - receiver function
+      - high-performance computing
+      - containers
+    social:
+      - icon: github
+        icon_pack: fab
+        link: https://github.com/wangyinz
+      - icon: github
+        icon_pack: fab
+        link: https://github.com/mspass-team
+    user_groups:
+      - Instructor
+    
