@@ -1,4 +1,4 @@
-# Hackweek Mission
+# HPS CyberTraining Mission
 
 :::{panels}
 :column: text-center col-4 col-lg-4
@@ -43,7 +43,7 @@ We gain experience in conducting data-intensive research.
 We encourage immersive, interactive and collaborative learning.
 ---
 
-**<span style='color:white'>Co-creation</span>**
+<!-- **<span style='color:white'>Co-creation</span>**
 ^^^
 ```{image} img/co-creation.png
 :alt: belonging
@@ -53,7 +53,7 @@ We encourage immersive, interactive and collaborative learning.
 ```
 +++
 We incorporate elements of co-creation with participants.
----
+--- -->
 
 
 **<span style='color:white'>Networking</span>**
