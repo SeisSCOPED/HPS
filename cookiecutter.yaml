@@ -18,7 +18,7 @@ banner:
   - url: intro.html
     title: HPS Jupyter Book
     new_window: false
-  image: ./img/banner.png #https://geohackweek.github.io/assets/images/banner.jpg # https://github.com/SeisSCOPED/HPS/tree/main/book/img/DASpng.jpg #  ./book/img/DASpng.jpg #
+  image: ./book/img/banner.png #https://geohackweek.github.io/assets/images/banner.jpg # https://github.com/SeisSCOPED/HPS/tree/main/book/img/DASpng.jpg #  ./book/img/DASpng.jpg #
 applicant_info: The virtual CyberTraining for Seismology will take place in May 2023.
 team:
   !include book/team.yaml
