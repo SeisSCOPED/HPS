@@ -2,18 +2,26 @@
 
 We are glad you are interested in applying to participate in {{hackweek}}! 
 
-Please apply [here](https://docs.google.com/forms/d/e/1FAIpQLScTr-WeVqcNB4ZyrdhWxsVHpC1CQ-oL1pAv33NZ1Gz8HIlmig/viewform?usp=sf_link)
+Please apply [here](https://docs.google.com/forms/d/e/1FAIpQLScTr-WeVqcNB4ZyrdhWxsVHpC1CQ-oL1pAv33NZ1Gz8HIlmig/viewform?usp=sf_link).
 
 ## Considerations
 
-Hackweeks are participant-driven events that encourage collaboration and teamwork. We welcome people from a diverse range of career stages, experience levels, backgrounds and identities.
+We welcome people from a diverse range of career stages, experience levels, backgrounds and identities. Our goals are:
+* To lower the entry barriers to high-performance computing of theoretical and observational seismology,
+* To foster a community of practice around these topics,
+* To promote Open-Science and best software and data practice in seismological research.
 
-Participant selection will be made with the goal of enhancing the diversity of our communities and building lasting connections that foster open science and data sharing.
 
-
-<!-- 
 ## Selection Criteria
 
+Participants will be selected based on:
+Their availability and commitment to attend the week of the workshop (the training will be made available online later for everyone interested)
+Their interest in seismological research or expertise in using CyberInfrastructure (HPC + Big Data)
+Space limitations (computing allocations limited to 20 participants per platform)
+
+We seek a broad representation across levels and demography
+
+<!-- 
 <!-- The hackweek organizing committee follows a two phase process in selecting applicants, adopted from {cite:p}`huppenkothen_entrofy_2020`: -->
 
 <!-- ```{image} img/participant-selection.png -->
