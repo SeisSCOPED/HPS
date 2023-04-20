@@ -91,33 +91,33 @@ tabs:
         url: # link to google slides and link to youtube channel
 
 
-  - time: 10:45 AM - 11:00 AM
-    location: Off/Zoom Room
-    title:  Break Coffee
-    description: break
-    leads: 
+  # - time: 10:45 AM - 11:00 AM
+  #   location: Off/Zoom Room
+  #   title:  Break Coffee
+  #   description: break
+  #   leads: 
 
-  - time: 11:00 AM - 12:00 PM
-    location: Zoom Room
-    title:  Ambient Noise Cross Correlation for Distributed Acoustic Sensing
-    description: NoisePy4DAS tutorial
-    leads: 
-    - Yiyu Ni, Marine Denolle
-    resources:
-      - title: "HPS CyberTraining: Ambient Cross correlation and DAS"
-        url: # link to google slides, Jbook, and link to youtube channel
+  # - time: 11:00 AM - 12:00 PM
+  #   location: Zoom Room
+  #   title:  Ambient Noise Cross Correlation for Distributed Acoustic Sensing
+  #   description: NoisePy4DAS tutorial
+  #   leads: 
+  #   - Yiyu Ni, Marine Denolle
+  #   resources:
+  #     - title: "HPS CyberTraining: Ambient Cross correlation and DAS"
+  #       url: # link to google slides, Jbook, and link to youtube channel
       
 
-  - time: 10:45 AM - 11:00 AM
-    location: Off/Zoom Room
-    title:  Break Coffee
-    description: break
-    leads: 
+  # - time: 10:45 AM - 11:00 AM
+  #   location: Off/Zoom Room
+  #   title:  Break Coffee
+  #   description: break
+  #   leads: 
 
-  - time: 12:00 PM - 1:00 PM
-    location: Off Zoom Room
-    title:  Lunch Break
-    # description: NoisePy4DAS tutorial
+  # - time: 12:00 PM - 1:00 PM
+  #   location: Off Zoom Room
+  #   title:  Lunch Break
+  #   # description: NoisePy4DAS tutorial
 
 - title: Day 3
   date: X X, Nov
