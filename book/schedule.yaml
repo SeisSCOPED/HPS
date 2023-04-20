@@ -91,11 +91,11 @@ tabs:
         url: # link to google slides and link to youtube channel
 
 
-  # - time: 10:45 AM - 11:00 AM
-  #   location: Off/Zoom Room
-  #   title:  Break Coffee
-  #   description: break
-  #   leads: 
+  - time: 10:45 AM - 11:00 AM
+    location: Off/Zoom Room
+    title:  Break Coffee
+    description: break
+    # leads: 
 
   # - time: 11:00 AM - 12:00 PM
   #   location: Zoom Room
