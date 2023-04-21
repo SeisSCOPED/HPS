@@ -18,8 +18,8 @@ banner:
   - url: intro.html
     title: HPS Jupyter Book
     new_window: false
-  image: https://github.com/SeisSCOPED/HPS/assets/DASpng.png?raw=true
-applicant_info: The virtual CyberTraining for Seismology will take place in May 2023. We baim to lower barriers to advance computing. More information about applicant's selection [here](https://seisscoped.org/HPS/application.html)
+  image: https://github.com/SeisSCOPED/HPS/blob/main/assets/DASpng.png?raw=true
+applicant_info: The virtual CyberTraining for Seismology will take place in May 2023. We aim to lower barriers to advance computing. More information about applicant's selection [here](https://seisscoped.org/HPS/application.html)
 team:
   !include book/team.yaml
 schedule:
@@ -29,7 +29,7 @@ sponsors:
   organizations:
   - name: Southern California Earthquake Center
     website: ''
-    logo_url: https://github.com/SeisSCOPED/HPS/assets/scec_logo.png
+    logo_url: https://github.com/SeisSCOPED/HPS/blob/main/assets/scec_logo.png?raw=true
   - name: University of Washington
     website: ''
     logo_url: https://github.com/SeisSCOPED/HPS/assets/W-Logo_Purple_RGB.png
