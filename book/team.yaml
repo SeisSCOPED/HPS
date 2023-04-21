@@ -93,4 +93,28 @@ people:
         link: https://github.com/mspass-team
     user_groups:
       - Instructor
-    
+
+  - title: Philip Maechling
+    avatar: https://github.com/SeisSCOPED/HPS/blob/main/assets/PhilipMaechling_portrait.png?raw=true
+    role: Computer Scientist
+    organizations:
+      - name: Southern California Earthquake Center
+      - name: University of Southern California
+    bio: Philip is a computer scientist and software developer. 
+      He develops open-source scientific software used in seismological research.
+      His software development experience includes commercial, aerospace, earthquake monitoring, and seismic hazard research projects.
+    expertise:
+      - ground motion simulation software
+      - seismic velocity model software
+      - real-time seismic data acqusition systems
+      - scientific workflows
+      - Python, C, Java
+    social:
+      - icon: github
+        icon_pack: fab
+        link: https://github.com/pjmaechling
+      - icon: github
+        icon_pack: fab
+        link: https://github.com/sceccode
+    user_groups:
+      - Tutorial Lead
