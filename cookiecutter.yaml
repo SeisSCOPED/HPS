@@ -19,7 +19,9 @@ banner:
     title: HPS Jupyter Book
     new_window: false
   image: https://github.com/SeisSCOPED/HPS/blob/main/assets/DASpng.png?raw=true
-applicant_info: The virtual CyberTraining for Seismology will take place in May 2023. We aim to lower barriers to advance computing. More information about applicant's selection [here](https://seisscoped.org/HPS/application.html)
+applicant_info: The virtual CyberTraining for Seismology will take place in May 2023. We aim to lower barriers to advance computing. More information about applicant's selection below
+application_page: "https://seisscoped.org/HPS/application.html"
+
 team:
   !include book/team.yaml
 schedule:
