@@ -28,19 +28,19 @@ sponsors:
   description: ''
   organizations:
   - name: Southern California Earthquake Center
-    website: ''
+    website: 'https://scec.org/'
     logo_url: https://github.com/SeisSCOPED/HPS/blob/main/assets/scec_logo.png?raw=true
   - name: University of Washington
-    website: ''
+    website: 'https://www.ess.washington.edu/'
     logo_url: https://github.com/SeisSCOPED/HPS/blob/main/assets/W-Logo_Purple_RGB.png?raw=true
   - name: University of California - San Diego
-    website: ''
+    website: 'https://igpp.ucsd.edu/'
     logo_url: https://escience.washington.edu/wp-content/uploads/2015/10/Logo_eScience-stacked.png
-  - name: Southern California Earthquake Center
-    website: ''
+  - name: eScience Institute
+    website: 'https://escience.washington.edu/'
     logo_url: https://escience.washington.edu/wp-content/uploads/2015/10/Logo_eScience-stacked.png
-  - name: SCHEESE
-    website: ''
+  - name: CHEESE
+    website: 'https://cheese-coe.eu/'
     logo_url: https://github.com/SeisSCOPED/HPS/blob/main/assets/cheese_logo.png?raw=true
 
 footer:
