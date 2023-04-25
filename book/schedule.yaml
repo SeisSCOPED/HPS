@@ -128,26 +128,25 @@ tabs:
 - title: Day 3
   date: Thursday May 11
   contents:
-  - time: 8:45 - 9:00 AM
+  - time: 8:45 AM - 9:00 AM
     title: "Welcome Coffee :coffee:"
-    description: Welcome
+    description: Welcome & Docker set up
 
 
   - time: 9:00 AM - 10:00 AM
     location: Zoom Room
-    title:  SCEC Community Models access
-    description: Tutorial on accessing the SCEC community X models
+    title:  SCEC PyCSEP
+    description: Earthquake Forecasting Methods and Tools (PyCSEP tutorial)
     leads: 
-    - Mei-Hui Su, Phil Maechling
+    - William Savran, Pablo Iturrieta, Jose Bayona, Fabio Silva
     resources:
-      - title: "HPS CyberTraining: SCEC CXM"
+      - title: "HPS CyberTraining: SCEC PyCSEP"
         url: # link to google slides and link to youtube channel
 
 
-  - time: 10:00 AM - 11:00 AM
-    location: Off Zoom Room
-    title:  Coffee Break
-    description: Coffee Break
+  - time: 10:45 AM - 11:00 AM
+    title: "Welcome & Docker"
+    description: Welcome & Docker set up
 
   - time: 11:00 AM - 12:00 PM
     location: Zoom Room
@@ -159,16 +158,36 @@ tabs:
       - title: "HPS CyberTraining: SCEC GSMV"
         url: # link to google slides and link to youtube channel
 
+
   - time: 12:00 PM - 1:00 PM
     location: Off Zoom Room
     title:  Lunch Break
     description: Lunch Break
 
 
+
   - time: 1:00 PM - 2:00 PM
     location: Zoom Room
+    title:  SCEC Community Models and Access Methods and Tools
+    description: Tutorial on accessing the SCEC community X models (CFM, CVM, GFM, CTM)
+    leads: 
+    - Mei-Hui Su, Phil Maechling
+    resources:
+      - title: "HPS CyberTraining: SCEC CXM"
+        url: # link to google slides and link to youtube channel
+
+
+  - time: 2:00 PM - 3:00 PM
+    location: Off Zoom Room
+    title:  Coffee Break
+    description: Coffee Break
+
+
+
+  - time: 3:00 PM - 4:00 PM
+    location: Zoom Room
     title:  SCEC CyberShake
-    description: CyberShake Project, What it is, and how to access the data
+    description: CyberShake Project, seismic hazard model and data products
     leads: 
     - Scott Callaghan
     resources:
@@ -181,16 +200,6 @@ tabs:
     title:  Coffee Break
     description: Coffee Break
 
-
-  - time: 3:00 PM - 4:00 PM
-    location: Zoom Room
-    title:  SCEC PyCSEP
-    description: Earthquake Forecasting Methods and Tools (PyCSEP tutorial)
-    leads: 
-    - Phil Maechling, Max Werner, Fabio Silva
-    resources:
-      - title: "HPS CyberTraining: SCEC PyCSEP"
-        url: # link to google slides and link to youtube channel
 
 
 - title: Day 4
@@ -223,7 +232,7 @@ tabs:
     title:  SPECFEM
     description: Wavefield Simulations using SPECFEM3D
     leads: 
-    -  Carl Tape
+    -  Bryant Chow, 
     resources:
       - title: "HPS CyberTraining: SPECFEM"
         url: # link to google slides and link to youtube channel
