@@ -35,7 +35,7 @@ Below is an example of a time schedule if you choose to take these self-guided l
 
 ### Python Programming Language
 
-We'll be using this lesson:
+Wse recommeng using these 
 * http://swcarpentry.github.io/python-novice-gapminder/
 
 | Time | Topic |
