@@ -31,24 +31,22 @@ people:
       - Organizer Lead
       - Tutorial Lead
   # =============
+
   - title: Alice Gabriel
-    avatar: 
-    role: 
+    avatar: https://github.com/SeisSCOPED/HPS/blob/main/assets/AliceGabriel.jpg?raw=true
+    role: Associate Professor
     organizations:
-      - name: 
-      - name: 
-    bio: 
+      - name: Scripps Institution of Oceanography, USCD
+      - name: Ludwig-Maximilians-University Munich
+    bio: Alice is a seismologist combining computer simulations, routinely utilizing the largest supercomputers worldwide, with data-driven techniques and theoretical analysis to tackle one of the grand challenges of seismology; uncovering the physical mechanisms relevant to understanding earthquakes. Her research bridges space-time scales as well as disciplines within Geophysics, Computer Science and Applied Mathematics. She aims to harness the full breadth of Earth observations integrative with novel modeling approaches. This entails studying a range of geophysical problems with multi-physics character such as earthquake-tsunami interaction.
     expertise:
-      - open science
-      - community building
-      -
-    social:
-      - icon: github
-        icon_pack: fab
-        link: https://github.com/?
+      - earthquake physics
+      - computational seismology      
+      - high-performance computing
     user_groups:
       - Organizer Lead
       - Tutorial Lead
+      
   # =============
   
 
