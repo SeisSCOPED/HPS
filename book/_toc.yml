@@ -27,7 +27,7 @@ parts:
 - caption: Soft and Hardware
   chapters:
     - file: softhardware/index
-    - file: softhardware/cloud_101
+    - file: softhardware/AWS_101
 # - caption: Tutorials
   # chapters:
     # - file: tutorials/index
