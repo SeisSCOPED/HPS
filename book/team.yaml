@@ -121,21 +121,22 @@ people:
 
 
   - title: Bryant Chow
-    avatar: https://avatars.githubusercontent.com/u/?
+    avatar: https://github.com/bch0w/bch0w.github.io/blob/master/images/headshot.jpeg
     role: Instructor for SPECFEM
     organizations:
-      - name: University of Alaska - Fairbanks
-    bio: Bryant is a computational seismologist. 
-      His research focuses  XXX
+      - name: University of Alaska Fairbanks
+    bio: Bryant is a computational seismologist. His research focuses on investigating Earth structure and tectonic processes by leveraging seismic data, software development and numerical modeling.
     expertise:
       - waveform simulation
       - high-performance computing
+      - seismic imaging
+      - software development
     social:
       - icon: github
         icon_pack: fab
-        link: https://github.com/?
+        link: https://bch0w.github.io
       - icon: github
         icon_pack: fab
-        link: https://github.com/?m
+        link: https://github.com/bch0w
     user_groups:
       - Instructor
