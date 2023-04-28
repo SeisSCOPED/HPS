@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cloud 101 for Seismology &#8212; HPS CyberTraining</title>
+    <title>AWS 101 for Seismology &#8212; HPS CyberTraining</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -190,7 +190,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Cloud 101 for Seismology
+   AWS 101 for Seismology
   </a>
  </li>
 </ul>
@@ -266,7 +266,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/softhardware/cloud_101.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/softhardware/AWS_101.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -286,10 +286,10 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/SeisSCOPED/HPS//issues/new?title=Issue%20on%20page%20%2Fsofthardware/cloud_101.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/SeisSCOPED/HPS//issues/new?title=Issue%20on%20page%20%2Fsofthardware/AWS_101.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/SeisSCOPED/HPS/edit/main/book/softhardware/cloud_101.md"><button
+        <a class="edit-button" href="https://github.com/SeisSCOPED/HPS/edit/main/book/softhardware/AWS_101.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -316,18 +316,30 @@ const thebe_selector_output = ".output, .cell_output"
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   Cloud 101 for Seismology
+   AWS 101 for Seismology
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#choosing-a-region">
-     Choosing a region
+    <a class="reference internal nav-link" href="#what-is-cloud-computing">
+     What is Cloud Computing
     </a>
    </li>
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#launching-an-instance">
-     Launching an instance
+    <a class="reference internal nav-link" href="#web-console-access">
+     Web Console Access
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#choosing-a-region">
+       Choosing a region
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#launching-an-instance">
+       Launching an instance
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -366,7 +378,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Cloud 101 for Seismology</h1>
+                <h1>AWS 101 for Seismology</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -378,18 +390,30 @@ const thebe_selector_output = ".output, .cell_output"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   Cloud 101 for Seismology
+   AWS 101 for Seismology
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#choosing-a-region">
-     Choosing a region
+    <a class="reference internal nav-link" href="#what-is-cloud-computing">
+     What is Cloud Computing
     </a>
    </li>
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#launching-an-instance">
-     Launching an instance
+    <a class="reference internal nav-link" href="#web-console-access">
+     Web Console Access
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#choosing-a-region">
+       Choosing a region
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#launching-an-instance">
+       Launching an instance
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -427,23 +451,28 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="cloud-101-for-seismology">
-<h1>Cloud 101 for Seismology<a class="headerlink" href="#cloud-101-for-seismology" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="aws-101-for-seismology">
+<h1>AWS 101 for Seismology<a class="headerlink" href="#aws-101-for-seismology" title="Permalink to this headline">¶</a></h1>
 <p>This tutorial will walk you thought getting on an AWS cloud instance from the ground up.</p>
+<div class="section" id="what-is-cloud-computing">
+<h2>What is Cloud Computing<a class="headerlink" href="#what-is-cloud-computing" title="Permalink to this headline">¶</a></h2>
 <p>Here will we post the google slides of the basics of Cloud computing (Naomi and Rob).</p>
 <p>Here we will post the youtube video of the deonstration.</p>
-<p>For the 2023 workshop, and <strong>before the workshop</strong>:</p>
+</div>
+<div class="section" id="web-console-access">
+<h2>Web Console Access<a class="headerlink" href="#web-console-access" title="Permalink to this headline">¶</a></h2>
+<p><strong>Before the 2023 workshop</strong>:</p>
 <ol class="simple">
 <li><p>log in with your designated IAM User to this console: <a class="reference external" href="https://806812320051.signin.aws.amazon.com/console">https://806812320051.signin.aws.amazon.com/console</a></p></li>
 <li><p>Choose the username that was decided by you and the workshop admin (IAM user nae account).</p></li>
 <li><p>As a first log in, the auto generated password will need to be replaced. Use a sophisticated password to confirm with AWS security standards.</p></li>
 </ol>
 <div class="section" id="choosing-a-region">
-<h2>Choosing a region<a class="headerlink" href="#choosing-a-region" title="Permalink to this headline">¶</a></h2>
-<p>An important aspect of cloud</p>
+<h3>Choosing a region<a class="headerlink" href="#choosing-a-region" title="Permalink to this headline">¶</a></h3>
+<p>An important aspect of cloud is that the computing and data centers are distributed around the world and labeled as “regions”. For fastest connection to data storage on S3, we strongly recommend to choose the region where the data is. For instance, the AWS open data sets</p>
 </div>
 <div class="section" id="launching-an-instance">
-<h2>Launching an instance<a class="headerlink" href="#launching-an-instance" title="Permalink to this headline">¶</a></h2>
+<h3>Launching an instance<a class="headerlink" href="#launching-an-instance" title="Permalink to this headline">¶</a></h3>
 <p>Launch an instance using EC2 (Elastic Computing Cloud). Follow the steps below. Screen shots of the steps are linked [here](url for google slides)</p>
 <ol class="simple">
 <li><p>Choose a default <strong>instance OS</strong>: Amazon linux</p></li>
@@ -454,7 +483,12 @@ Instance type: t2.micro</p></li>
 <li><p>The rest is default and <em>launch it</em>.</p></li>
 </ol>
 <p>Now the instance is launched, use the console to check.
-View instance, click on it. Right click connect, SSH client. Chmod the PEM file. In the same folder, copy the ssh link below and ssh to the instance. Just do Step 3 (chmod 400 *pem) and the example for “ssh -i “…</p>
+5. View instance, click on it -&gt; Right click -&gt;  connect -&gt; SSH client. We will only go through step 3 and the
+6. Change the permission to your local PEM/PPK file to only readibly to you. Use terminal and change the permission by going into the folder where the PEM/PPK file:</p>
+<p><code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">400</span> <span class="pre">file.pe</span></code></p>
+<ol class="simple">
+<li><p>Copy the ssh link command below and ssh to the instance. Just do Step 3 (chmod 400 *pem) and the example for “ssh -i “…</p></li>
+</ol>
 <p>To start from scratch, copy paste these commands in the terminal.
 You can do that all at once.
 sudo yum install -y git docker
@@ -463,6 +497,7 @@ chmod +x Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda
 ./miniconda/bin/conda init bash
 bash</p>
+</div>
 </div>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="get-the-project-repo">
