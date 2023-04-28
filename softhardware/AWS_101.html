@@ -368,27 +368,12 @@ const thebe_selector_output = ".output, .cell_output"
      Using Docker on EC2
     </a>
    </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#terminating-an-instance">
+     Terminating an instance
+    </a>
+   </li>
   </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#start-the-docker-service">
-   Start the docker service
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pull-the-image">
-   Pull the image
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#run-the-docker">
-   run the docker:
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#you-will-be-inside-you-cannot-run-a-jupyter-notebook-from-there">
-   You will be inside. You cannot run a jupyter notebook from there.
-  </a>
  </li>
 </ul>
 
@@ -464,27 +449,12 @@ const thebe_selector_output = ".output, .cell_output"
      Using Docker on EC2
     </a>
    </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#terminating-an-instance">
+     Terminating an instance
+    </a>
+   </li>
   </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#start-the-docker-service">
-   Start the docker service
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pull-the-image">
-   Pull the image
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#run-the-docker">
-   run the docker:
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#you-will-be-inside-you-cannot-run-a-jupyter-notebook-from-there">
-   You will be inside. You cannot run a jupyter notebook from there.
-  </a>
  </li>
 </ul>
 
@@ -530,7 +500,9 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Now the instance is launched, use the console to check.
 7. View instance, click on it -&gt; Right click -&gt;  connect -&gt; SSH client. We will only go through step 3 and the
 8. Change the permission to your local PEM/PPK file to only readibly to you. Use terminal and change the permission by going into the folder where the PEM/PPK file:</p>
-<p><code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">400</span> <span class="pre">file.pem</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod <span class="m">400</span> file.pem
+</pre></div>
+</div>
 <ol class="simple">
 <li><p>Copy the ssh link command in the folder where the PEM file is below and ssh to the instance:</p></li>
 </ol>
@@ -599,33 +571,29 @@ publicIPaddress:8888</p>
 </div>
 <div class="section" id="save-the-virtual-image">
 <h2>Save the Virtual Image<a class="headerlink" href="#save-the-virtual-image" title="Permalink to this headline">¶</a></h2>
-<p>You can save the image (AMI) so that you can start from there next time: click on the instance, click “image and instance” -&gt; “create image”, tag it for next time. For this workshop, please use FirstName_LastName_Image_TutorialX
+<p>You can save the image (AMI) so that you can start from there next time: click on the instance, click “image and instance” -&gt; “create image”, tag it for next time. For this workshop, please use:
+<code class="docutils literal notranslate"><span class="pre">FirstName_LastName_Image_TutorialX</span></code>
 You have to save it every time you want to save the current state of the instance</p>
 </div>
 <div class="section" id="using-docker-on-ec2">
 <h2>Using Docker on EC2<a class="headerlink" href="#using-docker-on-ec2" title="Permalink to this headline">¶</a></h2>
-<p>Docker:</p>
+<p>You can also run the scripts using the automatically generated Docker image.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo systemctl start docker
+<span class="c1"># Pull the image</span>
+sudo docker pull ghcr.io/seisscoped/seis_cloud:f041ec0
+<span class="c1"># run the docker:</span>
+sudo docker run -it -p <span class="m">8888</span>:8888 ghcr.io/seisscoped/seis_cloud:latest
+<span class="c1"># You will be inside. You cannot run a jupyter notebook from there. </span>
+jupyter notebook --ip <span class="m">0</span>.0.0.0
+</pre></div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="start-the-docker-service">
-<h1>Start the docker service<a class="headerlink" href="#start-the-docker-service" title="Permalink to this headline">¶</a></h1>
-<p>sudo systemctl start docker</p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="pull-the-image">
-<h1>Pull the image<a class="headerlink" href="#pull-the-image" title="Permalink to this headline">¶</a></h1>
-<p>sudo docker pull <a class="reference external" href="http://ghcr.io/seisscoped/seis_cloud:f041ec0">ghcr.io/seisscoped/seis_cloud:f041ec0</a></p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="run-the-docker">
-<h1>run the docker:<a class="headerlink" href="#run-the-docker" title="Permalink to this headline">¶</a></h1>
-<p>sudo docker run -it -p 8888:8888 <a class="reference external" href="http://ghcr.io/seisscoped/seis_cloud:latest">ghcr.io/seisscoped/seis_cloud:latest</a></p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="you-will-be-inside-you-cannot-run-a-jupyter-notebook-from-there">
-<h1>You will be inside. You cannot run a jupyter notebook from there.<a class="headerlink" href="#you-will-be-inside-you-cannot-run-a-jupyter-notebook-from-there" title="Permalink to this headline">¶</a></h1>
-<p>jupyter notebook –ip 0.0.0.0</p>
+<div class="section" id="terminating-an-instance">
+<h2>Terminating an instance<a class="headerlink" href="#terminating-an-instance" title="Permalink to this headline">¶</a></h2>
 <p>What is the difference between stop and terminate and instance, saving data vs cost
-NOTE: visit here to read more about stopping vs terminating.
+<strong>NOTE</strong>: visit <a class="reference external" href="https://docs.rightscale.com/faq/clouds/aws/Whats_the_difference_between_Terminating_and_Stopping_an_EC2_Instance.html">here</a> to read more about stopping vs terminating.
 If you stop, you do not pay for the hardware, but you will pay for the EBS volume only and the data is saved in the EBS volume. If you terminate, all data will be wiped and you will cease to pay.</p>
-<p>Then you will log in as an IAM user: username</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
