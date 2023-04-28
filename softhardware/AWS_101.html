@@ -344,9 +344,21 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#get-the-project-repo">
-   get the project repo
+  <a class="reference internal nav-link" href="#installing-software">
+   Installing Software
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#download-upload-to-your-ec2-instance">
+     Download / Upload to your EC2 instance
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#running-jupyter-nobooks">
+     Running Jupyter Nobooks
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#start-the-docker-service">
@@ -418,9 +430,21 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#get-the-project-repo">
-   get the project repo
+  <a class="reference internal nav-link" href="#installing-software">
+   Installing Software
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#download-upload-to-your-ec2-instance">
+     Download / Upload to your EC2 instance
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#running-jupyter-nobooks">
+     Running Jupyter Nobooks
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#start-the-docker-service">
@@ -475,44 +499,66 @@ const thebe_selector_output = ".output, .cell_output"
 <h3>Launching an instance<a class="headerlink" href="#launching-an-instance" title="Permalink to this headline">¶</a></h3>
 <p>Launch an instance using EC2 (Elastic Computing Cloud). Follow the steps below. Screen shots of the steps are linked [here](url for google slides)</p>
 <ol class="simple">
-<li><p>Choose a default <strong>instance OS</strong>: Amazon linux</p></li>
-<li><p><strong>Name and tags</strong>: Be specific for best job anaageent: <code class="docutils literal notranslate"><span class="pre">FirstName_LastName_jobname</span></code>
-Instance type: t2.micro</p></li>
+<li><p>Choose a default <strong>instance OS</strong>: <code class="docutils literal notranslate"><span class="pre">Amazon</span> <span class="pre">linux</span></code></p></li>
+<li><p><strong>Name and tags</strong>: Be specific for best job anaageent: <code class="docutils literal notranslate"><span class="pre">FirstName_LastName_jobname</span></code></p></li>
+<li><p><strong>Instance type</strong>: t2.micro</p></li>
 <li><p><strong>Key pair</strong>: create a new key pair. Download the .pem file, move it to a location that you can have access to and remember where it is. If the file does not save as .pem, replace the extension with .pem. If you use a windows computer, you might need a ppk</p></li>
 <li><p>Use <strong>existing security group</strong>, use default.</p></li>
-<li><p>The rest is default and <em>launch it</em>.</p></li>
+<li><p>In <strong>Advanced Details</strong>, choose a <code class="docutils literal notranslate"><span class="pre">spot</span> <span class="pre">instance</span></code>.</p></li>
+<li><p>The rest is default and <strong>launch it</strong>.</p></li>
 </ol>
 <p>Now the instance is launched, use the console to check.
-5. View instance, click on it -&gt; Right click -&gt;  connect -&gt; SSH client. We will only go through step 3 and the
-6. Change the permission to your local PEM/PPK file to only readibly to you. Use terminal and change the permission by going into the folder where the PEM/PPK file:</p>
-<p><code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">400</span> <span class="pre">file.pe</span></code></p>
+7. View instance, click on it -&gt; Right click -&gt;  connect -&gt; SSH client. We will only go through step 3 and the
+8. Change the permission to your local PEM/PPK file to only readibly to you. Use terminal and change the permission by going into the folder where the PEM/PPK file:</p>
+<p><code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">400</span> <span class="pre">file.pem</span></code></p>
 <ol class="simple">
-<li><p>Copy the ssh link command below and ssh to the instance. Just do Step 3 (chmod 400 *pem) and the example for “ssh -i “…</p></li>
+<li><p>Copy the ssh link command in the folder where the PEM file is below and ssh to the instance:</p></li>
 </ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh -i <span class="s2">&quot;file.pem&quot;</span> ec2-user@ec2.IPADDRESS
+</pre></div>
+</div>
 <p>To start from scratch, copy paste these commands in the terminal.
-You can do that all at once.
-sudo yum install -y git docker
-wget <a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh">https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh</a>
-chmod +x Miniconda3-latest-Linux-x86_64.sh
-./Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda
+You can copy the lines all at once and install it.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo yum install -y git docker
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+chmod +x Miniconda3-latest-Linux-x86_64.sh 
+./Miniconda3-latest-Linux-x86_64.sh -b -p <span class="nv">$HOME</span>/miniconda
 ./miniconda/bin/conda init bash
-bash</p>
+bash
+</pre></div>
+</div>
+<p>You can customize to save time. If <code class="docutils literal notranslate"><span class="pre">pip</span></code> or <code class="docutils literal notranslate"><span class="pre">docker</span></code> is not necessary, remove these lines.</p>
 </div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="get-the-project-repo">
-<h1>get the project repo<a class="headerlink" href="#get-the-project-repo" title="Permalink to this headline">¶</a></h1>
-<p>git clone <a class="reference external" href="https://github.com/SeisSCOPED/seis_cloud">https://github.com/SeisSCOPED/seis_cloud</a>
-cd seis_cloud
-conda create -y -n seiscloud python=3.8 pip
+<div class="tex2jax_ignore mathjax_ignore section" id="installing-software">
+<h1>Installing Software<a class="headerlink" href="#installing-software" title="Permalink to this headline">¶</a></h1>
+<p>Now you can install your software! Clone your repository, install your environment, run your scripts. We will illustrate with the example</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/SeisSCOPED/seis_cloud
+<span class="nb">cd</span> seis_cloud
+conda create -y -n seiscloud <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.8 pip
 conda activate seiscloud
-pip install -r requirements.txt</p>
+pip install -r requirements.txt
+</pre></div>
+</div>
 <p>(update from github and overwrite local: git fetch + git merge)</p>
-<p>To download from EC2:
-scp -i “your.pem” <a class="reference external" href="mailto:ec2-user&#37;&#52;&#48;ec2-publicIPAddress&#46;us-west-2&#46;compute&#46;amazonaws&#46;com">ec2-user<span>&#64;</span>ec2-publicIPAddress<span>&#46;</span>us-west-2<span>&#46;</span>compute<span>&#46;</span>amazonaws<span>&#46;</span>com</a>:/home/ec2-user/seis_cloud/file .</p>
-<p>If you are on Windows: C:&gt; pscp -i yourkey.ppk ec2-user&#64;publicDNS:/home/ubuntu/yourfilename C:[local_destination_path][folder]</p>
-<p>To get the jupyter notebook running:
-jupyter notebook –ip 0.0.0.0</p>
+<div class="section" id="download-upload-to-your-ec2-instance">
+<h2>Download / Upload to your EC2 instance<a class="headerlink" href="#download-upload-to-your-ec2-instance" title="Permalink to this headline">¶</a></h2>
+<p>To download from EC2:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>scp -i <span class="s2">&quot;your.pem&quot;</span> ec2-user@ec2-publicIPAddress.us-west-2.compute.amazonaws.com:/home/ec2-user/seis_cloud/file .
+</pre></div>
+</div>
+<p>If you are on Windows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>C:<span class="se">\&gt;</span> pscp -i yourkey.ppk ec2-user@publicDNS:/home/ubuntu/yourfilename C:<span class="se">\[</span>local_destination_path<span class="o">]</span><span class="se">\[</span>folder<span class="o">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="running-jupyter-nobooks">
+<h2>Running Jupyter Nobooks<a class="headerlink" href="#running-jupyter-nobooks" title="Permalink to this headline">¶</a></h2>
+<p>To get the jupyter notebook running:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter notebook --ip <span class="m">0</span>.0.0.0
+</pre></div>
+</div>
 <p>Then we have 2 options:
 ssh -i “user.pem” user&#64;publicIPaddress -L 8888:localhost:8888 -N
 Then open a browser and type localhost:8888/
@@ -527,6 +573,7 @@ publicIPaddress:8888</p>
 <p>You can save the image (AMI) so that you can start from there next time: click on the instance, click “image and instance” -&gt; “create image”, tag it for next time (in this workshop, please use FirstName_LastName_Image_TutorialX
 You have to save it every time you want to save the current state of the instance</p>
 <p>Docker:</p>
+</div>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="start-the-docker-service">
 <h1>Start the docker service<a class="headerlink" href="#start-the-docker-service" title="Permalink to this headline">¶</a></h1>
