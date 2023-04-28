@@ -1,0 +1,99 @@
+# Cloud 101 for Seismology
+
+This tutorial will walk you thought getting on an AWS cloud instance from the ground up.
+
+Here will we post the google slides of the basics of Cloud computing (Naomi and Rob).
+
+Here we will post the youtube video of the deonstration.
+
+For the 2023 workshop, and **before the workshop**:
+1. log in with your designated IAM User to this console: https://806812320051.signin.aws.amazon.com/console
+2. Choose the username that was decided by you and the workshop admin (IAM user nae account). 
+3. As a first log in, the auto generated password will need to be replaced. Use a sophisticated password to confirm with AWS security standards.
+
+## Choosing a region
+
+An important aspect of cloud
+
+
+## Launching an instance
+Launch an instance using EC2 (Elastic Computing Cloud). Follow the steps below. Screen shots of the steps are linked [here](url for google slides)
+
+
+1. Choose a default **instance OS**: Amazon linux
+2. **Name and tags**: Be specific for best job anaageent: ``FirstName_LastName_jobname``
+Instance type: t2.micro
+3. **Key pair**: create a new key pair. Download the .pem file, move it to a location that you can have access to and remember where it is. If the file does not save as .pem, replace the extension with .pem. If you use a windows computer, you might need a ppk
+3. Use **existing security group**, use default.
+4. The rest is default and *launch it*.
+
+Now the instance is launched, use the console to check.
+View instance, click on it. Right click connect, SSH client. Chmod the PEM file. In the same folder, copy the ssh link below and ssh to the instance. Just do Step 3 (chmod 400 *pem) and the example for “ssh -i “...
+
+To start from scratch, copy paste these commands in the terminal. 
+You can do that all at once.
+sudo yum install -y git docker
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+chmod +x Miniconda3-latest-Linux-x86_64.sh 
+./Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda
+./miniconda/bin/conda init bash
+bash
+
+
+
+# get the project repo
+git clone https://github.com/SeisSCOPED/seis_cloud
+cd seis_cloud
+conda create -y -n seiscloud python=3.8 pip
+conda activate seiscloud
+pip install -r requirements.txt
+
+(update from github and overwrite local: git fetch + git merge)
+
+To download from EC2: 
+scp -i "your.pem" ec2-user@ec2-publicIPAddress.us-west-2.compute.amazonaws.com:/home/ec2-user/seis_cloud/file .
+
+If you are on Windows: C:\> pscp -i yourkey.ppk ec2-user@publicDNS:/home/ubuntu/yourfilename C:\[local_destination_path]\[folder]
+
+To get the jupyter notebook running:
+jupyter notebook --ip 0.0.0.0
+
+Then we have 2 options:
+ssh -i "user.pem" user@publicIPaddress -L 8888:localhost:8888 -N
+Then open a browser and type localhost:8888/
+ssh -i "user.pem" user@publicIPaddress -L 8888:localhost:8888 -N
+Or
+
+Open a browser, type the IP address of the instance (see the public Public IPv4 DNS)
+Then type:
+publicIPaddress:8888
+
+It will open the notebook on the terminal, copy paste the token after publicIPaddress:8888/?token=TOKEN_TO_COPY
+
+Potential issue : safari and chrome may be upset as malware . Continue ;
+
+scp -i "Marine_Denolle_uwquake.pem" ec2-user@ec2-18-221-93-107.us-east-2.compute.amazonaws.com:/home/ec2-user/seis_cloud/features.csv .
+
+
+You can save the image (AMI) so that you can start from there next time: click on the instance, click “image and instance” -> “create image”, tag it for next time (in this workshop, please use FirstName_LastName_Image_TutorialX
+You have to save it every time you want to save the current state of the instance
+
+
+Docker:
+# Start the docker service
+sudo systemctl start docker
+# Pull the image
+sudo docker pull ghcr.io/seisscoped/seis_cloud:f041ec0
+
+# run the docker:
+sudo docker run -it -p 8888:8888 ghcr.io/seisscoped/seis_cloud:latest
+# You will be inside. You cannot run a jupyter notebook from there. 
+jupyter notebook --ip 0.0.0.0
+
+
+
+What is the difference between stop and terminate and instance, saving data vs cost
+	NOTE: visit here to read more about stopping vs terminating.
+If you stop, you do not pay for the hardware, but you will pay for the EBS volume only and the data is saved in the EBS volume. If you terminate, all data will be wiped and you will cease to pay.
+
+Then you will log in as an IAM user: username
