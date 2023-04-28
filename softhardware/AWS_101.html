@@ -358,6 +358,16 @@ const thebe_selector_output = ".output, .cell_output"
      Running Jupyter Nobooks
     </a>
    </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#save-the-virtual-image">
+     Save the Virtual Image
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-docker-on-ec2">
+     Using Docker on EC2
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h1 nav-item toc-entry">
@@ -442,6 +452,16 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#running-jupyter-nobooks">
      Running Jupyter Nobooks
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#save-the-virtual-image">
+     Save the Virtual Image
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-docker-on-ec2">
+     Using Docker on EC2
     </a>
    </li>
   </ul>
@@ -559,19 +579,31 @@ pip install -r requirements.txt
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter notebook --ip <span class="m">0</span>.0.0.0
 </pre></div>
 </div>
-<p>Then we have 2 options:
-ssh -i “user.pem” user&#64;publicIPaddress -L 8888:localhost:8888 -N
-Then open a browser and type localhost:8888/
-ssh -i “user.pem” user&#64;publicIPaddress -L 8888:localhost:8888 -N
-Or</p>
 <p>Open a browser, type the IP address of the instance (see the public Public IPv4 DNS)
-Then type:
+Then type in the browser:
 publicIPaddress:8888</p>
-<p>It will open the notebook on the terminal, copy paste the token after publicIPaddress:8888/?token=TOKEN_TO_COPY</p>
-<p>Potential issue : safari and chrome may be upset as malware . Continue ;</p>
-<p>scp -i “Marine_Denolle_uwquake.pem” <a class="reference external" href="mailto:ec2-user&#37;&#52;&#48;ec2-18-221-93-107&#46;us-east-2&#46;compute&#46;amazonaws&#46;com">ec2-user<span>&#64;</span>ec2-18-221-93-107<span>&#46;</span>us-east-2<span>&#46;</span>compute<span>&#46;</span>amazonaws<span>&#46;</span>com</a>:/home/ec2-user/seis_cloud/features.csv .</p>
-<p>You can save the image (AMI) so that you can start from there next time: click on the instance, click “image and instance” -&gt; “create image”, tag it for next time (in this workshop, please use FirstName_LastName_Image_TutorialX
+<p>You will be prompted to window and enter a token. On the EC2 terminal instance, you will see:
+<code class="docutils literal notranslate"><span class="pre">http://PRIVATE_IP.us-west-2.compute.internal:8888/?token=LONG_TOKEN</span></code></p>
+<p>Copy and past the LONG_TOKEN in the token window and the jupyter notebook will start.</p>
+<p>There are alternative options to login:</p>
+<ol class="simple">
+<li><p>Forward the ports when login in the instance:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh -i <span class="s2">&quot;user.pem&quot;</span> user@publicIPaddress -L <span class="m">8888</span>:localhost:8888 -N
+</pre></div>
+</div>
+<ol class="simple">
+<li><p>Open a browser and type localhost:8888/</p></li>
+</ol>
+<p><strong>Warning</strong>: we have experienced exception. Safari and Chrome may treat the connection as malware. These are warnings and can be ignored (???) and find a way to continue.</p>
+</div>
+<div class="section" id="save-the-virtual-image">
+<h2>Save the Virtual Image<a class="headerlink" href="#save-the-virtual-image" title="Permalink to this headline">¶</a></h2>
+<p>You can save the image (AMI) so that you can start from there next time: click on the instance, click “image and instance” -&gt; “create image”, tag it for next time. For this workshop, please use FirstName_LastName_Image_TutorialX
 You have to save it every time you want to save the current state of the instance</p>
+</div>
+<div class="section" id="using-docker-on-ec2">
+<h2>Using Docker on EC2<a class="headerlink" href="#using-docker-on-ec2" title="Permalink to this headline">¶</a></h2>
 <p>Docker:</p>
 </div>
 </div>
