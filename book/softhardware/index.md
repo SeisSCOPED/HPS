@@ -45,7 +45,7 @@ Institutions may have their own HPC systems. At UW, the system is called [Hyak](
 National HPC resources require specific request for allocation. Requests are typically done using [ACCESS](https://allocations.access-ci.org/) or [TACC](https://www.tacc.utexas.edu/).
 
 
-HPC can deploy virtual cloud systems to allow horizontal scaling and cloudstore-like file systems {cite:p}`.`.
+HPC can deploy virtual cloud systems to allow horizontal scaling and cloudstore-like file systems.
 
 One typically 1) chooses the HPC resource, and then 2) moves the data there for the computing workflow.
 
