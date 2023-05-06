@@ -25,7 +25,7 @@ parts:
         - file: preliminary/python
     - file: preliminary_seismo/index
 
-- caption: Soft and Hardware
+- caption: CyberInfrastructure
   chapters:
     - file: softhardware/index
     - file: softhardware/AWS_101
