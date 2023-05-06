@@ -10,6 +10,7 @@ parts:
       url:  https://seisscoped.org/HPS/index.html?jump_to=schedule
     - title: Team
       url: https://seisscoped.org/HPS/index.html?jump_to=team
+    - file: get-started
     - file: mission
     - file: CoC
 - caption: Preliminary Resources
