@@ -13,11 +13,17 @@ One you are logged into the Docker website, navigate to the “Downloads” page
 
 The Docker Desktop installation process varies between operating systems. Please contact the workshop’s technical support people on the workshop Slack channel for help if you have problems installing the Docker Desktop software on your system.
 
-In some cases, you may need System Administration privileges to install Docker. Open a browser and type the url ``https://docs.docker.com/get-docker/``.
-
+In some cases, you may need System Administration privileges to install Docker. Open a browser and type the url :``https://docs.docker.com/get-docker/``.
 
 ![Docker](img/docker.png)
 
+
+
+## **SSH**
+
+On Linux and Mac, you should be familiar with using Terminal and basic shell scripting to log in to remove linux servers. We will make use of ``ssh``.
+
+On Windows, you should use
 
 
 ## **AWS Accounts**
