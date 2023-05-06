@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AWS 101 for Seismology &#8212; HPS CyberTraining</title>
+    <title>AWS 101 &#8212; HPS CyberTraining</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Glossaries" href="../reference/glossary.html" />
-    <link rel="prev" title="Software and Hardware" href="index.html" />
+    <link rel="prev" title="Intro" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -184,18 +184,18 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Soft and Hardware
+  CyberInfrastructure
  </span>
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="index.html">
-   Software and Hardware
+   Intro
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   AWS 101 for Seismology
+   AWS 101
   </a>
  </li>
 </ul>
@@ -321,7 +321,7 @@ const thebe_selector_output = ".output, .cell_output"
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   AWS 101 for Seismology
+   AWS 101
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
@@ -398,7 +398,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>AWS 101 for Seismology</h1>
+                <h1>AWS 101</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -410,7 +410,7 @@ const thebe_selector_output = ".output, .cell_output"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   AWS 101 for Seismology
+   AWS 101
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
@@ -486,8 +486,8 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="aws-101-for-seismology">
-<h1>AWS 101 for Seismology<a class="headerlink" href="#aws-101-for-seismology" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="aws-101">
+<h1>AWS 101<a class="headerlink" href="#aws-101" title="Permalink to this headline">¶</a></h1>
 <p>This tutorial will walk you thought getting on an AWS cloud instance from the ground up.</p>
 <div class="section" id="what-is-cloud-computing">
 <h2>What is Cloud Computing<a class="headerlink" href="#what-is-cloud-computing" title="Permalink to this headline">¶</a></h2>
@@ -524,7 +524,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p><strong>Instance type</strong>: t2.micro</p></li>
 <li><p><strong>Key pair</strong>: create a new key pair. Download the .pem file, move it to a location that you can have access to and remember where it is. If the file does not save as .pem, replace the extension with .pem. If you use a windows computer, you might need a ppk</p></li>
 <li><p>Use <strong>existing security group</strong>, use default.</p></li>
-<li><p>In <strong>Advanced Details</strong>, choose a <code class="docutils literal notranslate"><span class="pre">spot</span> <span class="pre">instance</span></code>.</p></li>
+<li><p>In <strong>Advanced Details</strong>, choose a <code class="docutils literal notranslate"><span class="pre">Spot</span> <span class="pre">instance</span></code>. Spot instances are discounted instances from unused EC2 capacities. Most seismology can be ran on Spot.</p></li>
 <li><p>The rest is default and <strong>launch it</strong>. Now the instance is launched, use the console to check.</p></li>
 <li><p><strong>View instance</strong>, click on it -&gt; Right click -&gt;  connect -&gt; SSH client. We will only go through step 3 and copying the ssh command line.</p></li>
 <li><p>Change the permission to your local PEM/PPK file to only readibly to you. Use terminal and change the permission by going into the folder where the PEM/PPK file:</p></li>
@@ -533,12 +533,12 @@ const thebe_selector_output = ".output, .cell_output"
 </pre></div>
 </div>
 <ol>
-<li><p>Login to the Instance
-a. on <strong>Linux</strong>, copy the ssh link command in the folder where the PEM file is below and ssh to the instance.</p>
+<li><p>Login to the Instance</p>
+<p>a. On <strong>Linux</strong>, copy the ssh link command in the folder where the PEM file is below and ssh to the instance.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh -i <span class="s2">&quot;file.pem&quot;</span> ec2-user@ec2.IPADDRESS
 </pre></div>
 </div>
-<p>b. on <strong>Windows</strong>, login to an EC2 instance using <strong>PuTTY</strong> (a free SSH client) on Windows:
+<p>b. On <strong>Windows</strong>, login to an EC2 instance using <strong>PuTTY</strong> (a free SSH client) on Windows:
 * Open PuTTY
 * On the PuTTY Configuration screen, click Session in the Category pane.
 * In the Host Name (or IP address) box, paste <code class="docutils literal notranslate"><span class="pre">ec2-user&#64;YOUR_Public</span> <span class="pre">IPv4</span> <span class="pre">DNS</span></code> YOUR_Public IPv4 DNS can be found in the details of your EC2 instance
@@ -548,6 +548,11 @@ a. on <strong>Linux</strong>, copy the ssh link command in the folder where the 
 * Now click open and accept the connection.</p>
 </li>
 </ol>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="installing-software">
+<h1>Installing Software<a class="headerlink" href="#installing-software" title="Permalink to this headline">¶</a></h1>
 <p>To start from scratch, copy paste these commands in the terminal.
 You can copy the lines all at once and install it.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo yum install -y git docker
@@ -559,11 +564,6 @@ bash
 </pre></div>
 </div>
 <p>You can customize to save time. If <code class="docutils literal notranslate"><span class="pre">pip</span></code> or <code class="docutils literal notranslate"><span class="pre">docker</span></code> is not necessary, remove these lines.</p>
-</div>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="installing-software">
-<h1>Installing Software<a class="headerlink" href="#installing-software" title="Permalink to this headline">¶</a></h1>
 <p>Now you can install your software! Clone your repository, install your environment, run your scripts. We will illustrate with the example</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/SeisSCOPED/seis_cloud
 <span class="nb">cd</span> seis_cloud
@@ -696,7 +696,7 @@ If you stop, you do not pay for the hardware, but you will pay for the EBS volum
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Software and Hardware</p>
+            <p class="prev-next-title">Intro</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../reference/glossary.html" title="next page">
