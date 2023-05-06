@@ -13,4 +13,17 @@ One you are logged into the Docker website, navigate to the “Downloads” page
 
 The Docker Desktop installation process varies between operating systems. Please contact the workshop’s technical support people on the workshop Slack channel for help if you have problems installing the Docker Desktop software on your system.
 
-In some cases, you may need System Administration privileges to install Docker. 
+In some cases, you may need System Administration privileges to install Docker. Open a browser and type the url ``https://docs.docker.com/get-docker/``.
+
+
+![Docker](img/docker.png)
+
+
+
+## **AWS Accounts**
+
+If you have been assigned a cloud account for this workshop, you need to set up AWS accounts prior to the start of the worksop. Contact Marine Denolle or Yiyu Ni via direct message on slack with your prefered username to log in and your preferred email address.
+
+1. log in with your designated IAM User to this console: https://806812320051.signin.aws.amazon.com/console
+2. Choose the username that was decided by you and the workshop admin (IAM user nae account). 
+3. As a first log in, the auto generated password will need to be replaced. Use a sophisticated password to confirm with AWS security standards.
