@@ -330,6 +330,14 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#before-the-2023-workshop">
+       <strong>
+        Before the 2023 workshop
+       </strong>
+       :
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
       <a class="reference internal nav-link" href="#choosing-a-region">
        Choosing a region
       </a>
@@ -411,6 +419,14 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#before-the-2023-workshop">
+       <strong>
+        Before the 2023 workshop
+       </strong>
+       :
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
       <a class="reference internal nav-link" href="#choosing-a-region">
        Choosing a region
       </a>
@@ -475,15 +491,24 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <div class="section" id="web-console-access">
 <h2>Web Console Access<a class="headerlink" href="#web-console-access" title="Permalink to this headline">¶</a></h2>
-<p><strong>Before the 2023 workshop</strong>:</p>
+<div class="section" id="before-the-2023-workshop">
+<h3><strong>Before the 2023 workshop</strong>:<a class="headerlink" href="#before-the-2023-workshop" title="Permalink to this headline">¶</a></h3>
 <ol class="simple">
 <li><p>log in with your designated IAM User to this console: <a class="reference external" href="https://806812320051.signin.aws.amazon.com/console">https://806812320051.signin.aws.amazon.com/console</a></p></li>
 <li><p>Choose the username that was decided by you and the workshop admin (IAM user nae account).</p></li>
 <li><p>As a first log in, the auto generated password will need to be replaced. Use a sophisticated password to confirm with AWS security standards.</p></li>
 </ol>
+</div>
 <div class="section" id="choosing-a-region">
 <h3>Choosing a region<a class="headerlink" href="#choosing-a-region" title="Permalink to this headline">¶</a></h3>
 <p>An important aspect of cloud is that the computing and data centers are distributed around the world and labeled as “regions”. For fastest connection to data storage on S3, we strongly recommend to choose the region where the data is. For instance, the AWS open data sets</p>
+<p>To choose a region in AWS, follow these steps:</p>
+<ol class="simple">
+<li><p>Log in to your AWS Management Console.</p></li>
+<li><p>In the top-right corner, click on the current region name (e.g., “US East (N. Virginia)”).</p></li>
+<li><p>In the dropdown menu that appears, select a region (e.g. “US West (Oregon)”).</p></li>
+<li><p>After selecting the region, all AWS services you use will be hosted in that region.</p></li>
+</ol>
 </div>
 <div class="section" id="launching-an-instance">
 <h3>Launching an instance<a class="headerlink" href="#launching-an-instance" title="Permalink to this headline">¶</a></h3>
@@ -571,20 +596,52 @@ publicIPaddress:8888</p>
 </div>
 <div class="section" id="save-the-virtual-image">
 <h2>Save the Virtual Image<a class="headerlink" href="#save-the-virtual-image" title="Permalink to this headline">¶</a></h2>
-<p>You can save the image (AMI) so that you can start from there next time: click on the instance, click “image and instance” -&gt; “create image”, tag it for next time. For this workshop, please use:
-<code class="docutils literal notranslate"><span class="pre">FirstName_LastName_Image_TutorialX</span></code>
-You have to save it every time you want to save the current state of the instance</p>
+<p>You can save the image (AMI) so that you can start from there next time. This can save time and effort in setting up the instance from scratch every time.
+Here are the steps to save the virtual image (AMI) of an EC2 instance in AWS:</p>
+<p>In your AWS Management Console:</p>
+<ol class="simple">
+<li><p>Navigate to the EC2 dashboard.</p></li>
+<li><p>Select the EC2 instance that you want to save the image of.</p></li>
+<li><p>Right-click on the instance and click on “Create Image” in the dropdown menu.</p></li>
+<li><p>In the “Create Image” dialog box, enter a descriptive name for your image in the “Name” field. For this workshop, please use the format <strong>”FirstName_LastName_Image_TutorialX”</strong>.</p></li>
+<li><p>Optionally, you can add a description and tags to the image for easier management later on.</p></li>
+<li><p>Click on the “Create Image” button to start the image creation process.</p></li>
+<li><p>Wait for the image creation process to complete. This may take several minutes depending on the size of your instance and the amount of data being saved.</p></li>
+<li><p>Once the image has been created, it will appear in the “AMIs” section of the EC2 dashboard.</p></li>
+</ol>
+<p>You have to save it every time you want to save the current state of the instance</p>
 </div>
 <div class="section" id="using-docker-on-ec2">
 <h2>Using Docker on EC2<a class="headerlink" href="#using-docker-on-ec2" title="Permalink to this headline">¶</a></h2>
-<p>You can also run the scripts using the automatically generated Docker image.</p>
+<p>You can also run the scripts using the automatically generated Docker image. Note that if you have a Jupyter notebook running on port 8888 before starting Docker, you will need to terminate it before running Docker to avoid port conflicts.</p>
+<ol class="simple">
+<li><p>Start docker</p></li>
+</ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo systemctl start docker
-<span class="c1"># Pull the image</span>
-sudo docker pull ghcr.io/seisscoped/seis_cloud:f041ec0
-<span class="c1"># run the docker:</span>
-sudo docker run -it -p <span class="m">8888</span>:8888 ghcr.io/seisscoped/seis_cloud:latest
-<span class="c1"># You will be inside. You cannot run a jupyter notebook from there. </span>
-jupyter notebook --ip <span class="m">0</span>.0.0.0
+</pre></div>
+</div>
+<ol class="simple">
+<li><p>Pull the image. This will pull the Docker image named seis_cloud from the GitHub Container Registry, with the specific tag f041ec0.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo docker pull ghcr.io/seisscoped/seis_cloud:f041ec0
+</pre></div>
+</div>
+<ol class="simple">
+<li><p>Run the docker. This will run the seis_cloud image in interactive mode, and forward port 8888 from the container to port 8888 on the EC2 instance. The latest tag will pull the most recent version of the image.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo docker run -it -p <span class="m">8888</span>:8888 ghcr.io/seisscoped/seis_cloud:latest
+</pre></div>
+</div>
+<ol class="simple">
+<li><p>You will be inside the docker container. You can now run a jupyter notebook from there.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter notebook --ip <span class="m">0</span>.0.0.0
+</pre></div>
+</div>
+<ol class="simple">
+<li><p>To exit docker, simply type</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">exit</span>
 </pre></div>
 </div>
 </div>
