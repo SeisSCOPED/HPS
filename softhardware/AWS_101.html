@@ -525,11 +525,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p><strong>Key pair</strong>: create a new key pair. Download the .pem file, move it to a location that you can have access to and remember where it is. If the file does not save as .pem, replace the extension with .pem. If you use a windows computer, you might need a ppk</p></li>
 <li><p>Use <strong>existing security group</strong>, use default.</p></li>
 <li><p>In <strong>Advanced Details</strong>, choose a <code class="docutils literal notranslate"><span class="pre">spot</span> <span class="pre">instance</span></code>.</p></li>
-<li><p>The rest is default and <strong>launch it</strong>.</p></li>
+<li><p>The rest is default and <strong>launch it</strong>. Now the instance is launched, use the console to check.</p></li>
+<li><p><strong>View instance</strong>, click on it -&gt; Right click -&gt;  connect -&gt; SSH client. We will only go through step 3 and copying the ssh command line.</p></li>
+<li><p>Change the permission to your local PEM/PPK file to only readibly to you. Use terminal and change the permission by going into the folder where the PEM/PPK file:</p></li>
 </ol>
-<p>Now the instance is launched, use the console to check.
-7. View instance, click on it -&gt; Right click -&gt;  connect -&gt; SSH client. We will only go through step 3 and the
-8. Change the permission to your local PEM/PPK file to only readibly to you. Use terminal and change the permission by going into the folder where the PEM/PPK file:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod <span class="m">400</span> file.pem
 </pre></div>
 </div>
@@ -539,8 +538,6 @@ a. on <strong>Linux</strong>, copy the ssh link command in the folder where the 
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh -i <span class="s2">&quot;file.pem&quot;</span> ec2-user@ec2.IPADDRESS
 </pre></div>
 </div>
-</li>
-</ol>
 <p>b. on <strong>Windows</strong>, login to an EC2 instance using <strong>PuTTY</strong> (a free SSH client) on Windows:
 * Open PuTTY
 * On the PuTTY Configuration screen, click Session in the Category pane.
@@ -549,6 +546,8 @@ a. on <strong>Linux</strong>, copy the ssh link command in the folder where the 
 * Back in the Category pane, expand Connection, expand SSH, and click Auth.
 * In the Private key file for authentication box, click browse and locate your .ppk file for the instance that you created and click.
 * Now click open and accept the connection.</p>
+</li>
+</ol>
 <p>To start from scratch, copy paste these commands in the terminal.
 You can copy the lines all at once and install it.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo yum install -y git docker
