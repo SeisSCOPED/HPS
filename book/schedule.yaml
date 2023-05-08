@@ -3,12 +3,22 @@ tabs:
 - title: Day 1
   date: Tuesday May 9, 2023
   contents:
-  - time: 8:45am - 9:15am
+  - time: 8:45am - 9:00am
     location: Zoom Room
-    title: Welcome and Set up
-    description: Welcome to the workshop, Introductions
+    title: Welcome and Set up 
+    description: Getting ready with Docker, Slack, and Zoom
     leads:
     - Marine Denolle, Alice Gabriel
+  - time: 9:00am - 9:15am
+    location: Zoom Room
+    title: Welcome and Introduction
+    description: Welcome to the workshop and logistics
+    resources:
+      - title: "Logistics"
+        url: https://docs.google.com/presentation/d/1555h5l9y3gnwEts_qeMzlqnLPfkoX6p7ntSyFJHX_V8/edit?usp=sharing
+
+    leads:
+    - Marine Denolle, Alice Gabriel, and others
   - time: 9:15am - 10:00am
     location: Zoom Room
     title: Open Science lecture
@@ -114,7 +124,7 @@ tabs:
     description: Lunch Break
 
 
-  - time: 2:00 PM - 4:00 PM
+  - time: 2:00 AM - 4:00 PM
     location: Zoom Room
     title:  ML Workflows for Earthquake Detection and Phase picking
     description: Tutorial to train,test,deploy detection and phase picking using ML models, Seisbench
