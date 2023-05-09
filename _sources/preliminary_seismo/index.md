@@ -4,7 +4,7 @@ The workshop will dive into advanced computing levels starting the second day. W
 
 ```{attention}
 Please make sure to find some time to go through the below material before
-the hackweek.
+the workshop.
 ```
 
 ## Basic Seismology
@@ -25,6 +25,6 @@ Fantastic est of video tutorials by the ROSES program. Note that every year has 
 - Offering in [2021](https://connect.agu.org/seismology/roses/roses2021materials), and their [Github](https://github.com/roseseismo/roses2021)
   
 
-## Experts in Computing and Seismomlogy
+## Experts in Computing and Seismology
 - Cloud computing video tutorials:
-    - https://www.youtube.com/watch?v=0hGoK1SdBm4: get started on AWS-EC2 (by our own Julian Schmidt!)
+    - https://www.youtube.com/watch?v=0hGoK1SdBm4: get started on AWS-EC2 (by Julian Schmitt!)
