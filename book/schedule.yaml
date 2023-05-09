@@ -20,7 +20,7 @@ tabs:
     leads:
     - Marine Denolle, Alice Gabriel, and others
   - time: 9:20am - 10:25am
-    location: Zoom Room
+    # location: Zoom Room
     title: Open Science lecture
     description: A talk about reproducible research
     leads:
@@ -30,13 +30,13 @@ tabs:
         url: https://docs.google.com/presentation/d/1SCrx65-Q_CB8JRMN81Uk-QniPvPE-wozRD7YDDQEapc/edit#slide=id.g22df4f4547a_0_363
         
   - time: 10:25am - 10:50am
-    location: Zoom Room
+    # location: Zoom Room
     title: Zoom hang out
     description: Get to know each other
 
 
   - time: 10:50am - 11:20am
-    location: Zoom Room
+    # location: Zoom Room
     title: Software Best Practices
     description: Software best practices, software ecosystems
     leads: 
@@ -47,7 +47,7 @@ tabs:
 
 
   - time: 11:20am - 12:20pm
-    location: Zoom Room
+    # location: Zoom Room
     title: Containers
     description: 
     leads: 
@@ -57,13 +57,13 @@ tabs:
         url:
 
   - time: 11:00pm - 1:00pm
-    location: off/on zoom
+    # location: Zoom Room
     title: Lunch Break
     description: break
 
 
   - time: 1:00pm - 2:00pm
-    location: Zoom Room
+    # location: Zoom Room
     title: HPC Systems
     description: Intro to HPC, Parallel Programming, and writing a successful allocation proposal
     leads: 
@@ -73,12 +73,12 @@ tabs:
         url: 
 
   - time: 2:00pm - 3:00pm
-    location: off/on zoom
+    # location: Zoom Room
     title: Lunch Break
     description: break
 
   - time: 3:00pm - 5:00pm
-    location: Zoom Room
+    # location: Zoom Room
     title: Cloud Systems
     description: What cloud computing is, and a toy problem on AWS EC2+S3
     leads: 
@@ -112,7 +112,7 @@ tabs:
 
 
   - time: 10:45 AM - 11:00 AM
-    location: Off/Zoom Room
+    # location: Off/Zoom Room
     title:  Break Coffee
     description: break
     # leads: 
@@ -134,7 +134,7 @@ tabs:
     description: Lunch Break
 
 
-  - time: 2:00 AM - 4:00 PM
+  - time: 2:00 PM - 4:00 PM
     location: Zoom Room
     title:  ML Workflows for Earthquake Detection and Phase picking
     description: Tutorial to train,test,deploy detection and phase picking using ML models, Seisbench
