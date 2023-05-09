@@ -42,8 +42,8 @@ tabs:
     leads: 
     - Marine Denolle
     resources:
-      - title: "HPS CyberTraining: Parallelisation"
-        url:
+      - title: "Slides"
+        url: https://docs.google.com/presentation/d/1HvHP3qLyBG-fYta3_CtolY0BWN6zXSBfQ7Pf00NrVQ0/edit?usp=sharing
 
 
   - time: 11:20am - 12:20pm
@@ -51,7 +51,7 @@ tabs:
     title: Containers
     description: 
     leads: 
-    - Iang Wang
+    - Chenxiao Wang, Iang Wang
     resources:
       - title: "Containers"
         url:
@@ -65,27 +65,31 @@ tabs:
   - time: 1:00pm - 2:00pm
     location: Zoom Room
     title: HPC Systems
-    description: How to get on HPC systems, getting allocations, monitoring jobs, etc
+    description: "Intro to HPC and Parallel Programming" and "Writing a successful allocation proposal"
     leads: 
-    - Marine Denolle, Ian Wang, Alice Gabriel
+    - Ian Wang
     resources:
       - title: "HPS CyberTraining: HPC Systems"
-        url:
+        url: 
 
   - time: 2:00pm - 3:00pm
     location: off/on zoom
     title: Lunch Break
     description: break
 
-  - time: 3:00pm - 4:30pm
+  - time: 3:00pm - 5:00pm
     location: Zoom Room
     title: Cloud Systems
     description: What cloud computing is, and a toy problem on AWS EC2+S3
     leads: 
-    - Rob Fatland, Naomi Alterman, Marine Denolle
+    - Naomi Alterman, Rob Fatland, Yiyu Ni, Marine Denolle
     resources:
-      - title: "HPS CyberTraining: Cloud Systems"
-        url:
+      - title: "Slides"
+        url: https://docs.google.com/presentation/d/1E9_nGlHW8Rz2g4UrQMXyRVZ1UoxuSNejGmszf-OVDrI/edit#slide=id.p
+      - title: "Notebook Tutorial"
+        url: https://seisscoped.org/HPS/softhardware/AWS_101.html
+      - title: "GitHub Repository"
+        url: https://github.com/SeisSCOPED/seis_cloud
 
 
 - title: Day 2
