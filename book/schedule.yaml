@@ -28,7 +28,9 @@ tabs:
     resources:
       - title: "Slides"
         url: https://docs.google.com/presentation/d/1SCrx65-Q_CB8JRMN81Uk-QniPvPE-wozRD7YDDQEapc/edit#slide=id.g22df4f4547a_0_363
-        
+      - title: "David May Slides"
+        url: https://drive.google.com/file/d/1oX1sBedX5tXfj7PqC-1_J2_GSQiXUrYE/view?usp=share_link
+
   - time: 10:25am - 10:50am
     # location: Zoom Room
     title: Zoom hang out
