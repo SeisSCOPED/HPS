@@ -51,7 +51,7 @@ tabs:
     title: Containers
     description: 
     leads: 
-    - Iang Wang
+    - Ian Wang
     resources:
       - title: "Containers"
         url:
@@ -115,7 +115,7 @@ tabs:
 
   - time: 11:00 AM - 12:00 PM
     location: Zoom Room
-    title:  Ambient Noise Cross Correlation for Distributed Acoustic Sensing
+    title:  Ambient Noise Cross Correlation for Distributed Acoustic Sensing on the Cloud
     description: NoisePy4DAS tutorial
     leads: 
     - Yiyu Ni, Marine Denolle
