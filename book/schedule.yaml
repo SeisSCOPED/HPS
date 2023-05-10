@@ -134,7 +134,6 @@ tabs:
     resources:
       - title: "DAS on the cloud & cross correlation"
         url: https://docs.google.com/presentation/d/1SrwfpmUnc3CsPs1x1z3Luj7Dx9cPmkCS/edit#slide=id.p1
-      
 
   - time: 12:00 PM - 1:00 PM
     location: Off Zoom Room
@@ -150,7 +149,7 @@ tabs:
     - Congcong Yuan, Yiyu Ni
     resources:
       - title: "ML workflow and Ensemble Learning"
-        url: https://docs.google.com/presentation/d/1Y8YkBp7mif8wAala7pEsjKDcGIAcWkbXWr6ZaV9zOnA/edit#slide=id.g23e7dcccaeb_0_7
+        url: https://docs.google.com/presentation/d/1Y8YkBp7mif8wAala7pEsjKDcGIAcWkbXWr6ZaV9zOnA/edit?usp=sharing
       
 
 - title: Day 3
