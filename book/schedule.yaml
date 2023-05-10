@@ -114,7 +114,9 @@ tabs:
     - Marine Denolle
     resources:
       - title: "HPS CyberTraining: Ambient Noise Seismology"
-        url: # link to google slides and link to youtube channel
+        url: https://docs.google.com/presentation/d/1mqcaR-vqgxDz3aeYvP4wv1_VJnnGtMaXJ9PZ3PMC5JQ/edit?usp=sharing
+      - title: "NoisePy"
+        url: https://github.com/mdenolle/NoisePy
 
 
   - time: 10:45 AM - 11:00 AM
@@ -130,8 +132,8 @@ tabs:
     leads: 
     - Yiyu Ni, Marine Denolle
     resources:
-      - title: "HPS CyberTraining: Ambient Cross correlation and DAS"
-        url: # link to google slides, Jbook, and link to youtube channel
+      - title: "DAS on the cloud & cross correlation"
+        url: https://docs.google.com/presentation/d/1SrwfpmUnc3CsPs1x1z3Luj7Dx9cPmkCS/edit#slide=id.p1
       
 
   - time: 12:00 PM - 1:00 PM
