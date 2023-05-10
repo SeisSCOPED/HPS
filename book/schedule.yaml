@@ -149,8 +149,8 @@ tabs:
     leads: 
     - Congcong Yuan, Yiyu Ni
     resources:
-      - title: "HPS CyberTraining: ML Earthquake Detection and Phase Picking"
-        url: # link to google slides, Jbook, and link to youtube channel
+      - title: "ML workflow and Ensemble Learning"
+        url: https://docs.google.com/presentation/d/1Y8YkBp7mif8wAala7pEsjKDcGIAcWkbXWr6ZaV9zOnA/edit#slide=id.g23e7dcccaeb_0_7
       
 
 - title: Day 3
