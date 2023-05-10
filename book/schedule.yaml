@@ -219,7 +219,7 @@ tabs:
     - Scott Callaghan
     resources:
       - title: "HPS CyberTraining: SCEC CyberShake"
-        url: # link to google slides and link to youtube channel
+        url: https://docs.google.com/presentation/d/1T8NYemxxCqmU6qdKiNCZZt1GX7pzzcBO
 
 
   - time: 2:00 PM - 3:00 PM
@@ -254,12 +254,23 @@ tabs:
     title:  Lunch Break
 
 
-  - time: 1:00 PM - 3:00 PM
+  - time: 1:00 PM - 2:00 PM
+    location: Zoom Room
+    title:  HPC Basics and Apptainer Hands-on
+    description: Basics of using HPC system, run SeisSol with Apptainer on Frontera
+    leads: 
+    -  Ian Wang 
+    resources:
+      - title: "HPS CyberTraining: HPC"
+        url: # link to google slides and link to youtube channel
+
+
+  - time: 2:00 PM - 5:00 PM
     location: Zoom Room
     title:  SPECFEM
     description: Wavefield Simulations using SPECFEM3D
     leads: 
-    -  Bryant Chow, 
+    -  Bryant Chow
     resources:
       - title: "HPS CyberTraining: SPECFEM"
         url: # link to google slides and link to youtube channel
