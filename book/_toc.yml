@@ -29,6 +29,11 @@ parts:
   chapters:
     - file: softhardware/index
     - file: softhardware/AWS_101
+
+
+- caption: Ambient Noise
+  chapters:
+    - file: ambient_noise/noisepy
 # - caption: Tutorials
   # chapters:
     # - file: tutorials/index
