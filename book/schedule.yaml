@@ -160,8 +160,8 @@ tabs:
     description: Welcome & Docker set up
     resources:
       - title: "Installation Guide"
-        url: https://drive.google.com/file/d/14PQm1Nc1zvcm53VbydHLBpGpC-blYCbu/view?usp=sharing
-
+        url: https://drive.google.com/file/d/14PQm1Nc1zvcm53VbydHLBpGpC-blYCbu/view?usp=share_link
+        
   - time: 9:00 AM - 10:00 AM
     location: Zoom Room
     title:  SCEC PyCSEP
