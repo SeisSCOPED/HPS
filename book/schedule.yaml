@@ -165,11 +165,10 @@ tabs:
     title:  SCEC PyCSEP
     description: Earthquake Forecasting Methods and Tools (PyCSEP tutorial)
     leads: 
-    - William Savran, Pablo Iturrieta, Jose Bayona, Fabio Silva
+    - Pablo Iturrieta, Jose Bayona, Fabio Silva
     resources:
       - title: "HPS CyberTraining: SCEC PyCSEP"
-        url: # link to google slides and link to youtube channel
-
+        url: https://docs.google.com/presentation/d/1IvgZ9kqZyTl0mSLyV7mOE08z-fhSJcez/edit#slide=id.p1
 
   - time: 10:45 AM - 11:00 AM
     title: "Welcome & Docker"
@@ -201,8 +200,7 @@ tabs:
     - Mei-Hui Su, Phil Maechling
     resources:
       - title: "HPS CyberTraining: SCEC CXM"
-        url: # link to google slides and link to youtube channel
-
+        url: https://docs.google.com/presentation/d/1Sa--r6uoQViKPdi_HUfXPo4WWMBdyNnX/edit
 
   - time: 2:00 PM - 3:00 PM
     location: Off Zoom Room
@@ -221,20 +219,12 @@ tabs:
       - title: "HPS CyberTraining: SCEC CyberShake"
         url: https://docs.google.com/presentation/d/1T8NYemxxCqmU6qdKiNCZZt1GX7pzzcBO
 
-
-  - time: 2:00 PM - 3:00 PM
-    location: Off Zoom Room
-    title:  Coffee Break
-    description: Coffee Break
-
-
-
 - title: Day 4
   date: Friday May 12
 
   contents:
   - time: 8:45 - 9:00 AM
-    title: "Welcome Coffee :coffee:"
+    title: "Welcome Coffee"
     description: Welcome and check-in for docker
 
 
