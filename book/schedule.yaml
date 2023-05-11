@@ -158,6 +158,9 @@ tabs:
   - time: 8:45 AM - 9:00 AM
     title: "Welcome Coffee :coffee:"
     description: Welcome & Docker set up
+    resources:
+      - title: "Installation Guide"
+        url: https://drive.google.com/drive/u/0/folders/1rMoOLR9k_BB_4XMHDN50iGa5hS3ACzMk
 
 
   - time: 9:00 AM - 10:00 AM
@@ -169,6 +172,7 @@ tabs:
     resources:
       - title: "HPS CyberTraining: SCEC PyCSEP"
         url: https://docs.google.com/presentation/d/1IvgZ9kqZyTl0mSLyV7mOE08z-fhSJcez/edit#slide=id.p1
+  
 
   - time: 10:45 AM - 11:00 AM
     title: "Welcome & Docker"
