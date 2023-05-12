@@ -234,7 +234,7 @@ tabs:
   - time: 9:00 AM - 12:00 PM
     location: Zoom Room
     title:  SeisSol
-    description: HPS CyberTraining: Modeling 3D Earthquake Dynamics using SeisSol
+    description: "HPS CyberTraining Modeling 3D Earthquake Dynamics using SeisSol"
     leads: 
     - Alice Gabriel, Sebastian Wolf, Nico Schliwa
     resources:
