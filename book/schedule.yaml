@@ -241,7 +241,7 @@ tabs:
       - title: "Introduction to 3D Dynamic Rupture Simulations and SeisSol - Alice Gabriel"
         url: https://drive.google.com/file/d/12L75SqMaMBm8vhpARj3lBVdNv9CbbLEk/view?usp=share_link
       - title: "My first 3D Dynamic Rupture Simulation - Sebastian Wolf"
-        url: # link to google slides and link to youtube channel
+        url: https://github.com/SeisSol/Training
       - title: "3D kinematic simulations: The 1994 Northridge earthquake - Nico Schliwa"
         url: https://docs.google.com/presentation/d/1vHsMeWhiKHhCPEUkzk8EzmN1P0SapRelL6Obrmdyf5c/edit?usp=share_link
       - title: "3D dynamic rupture simulations of the 2018 Palu, Sulawesi earthquake - Alice Gabriel"
