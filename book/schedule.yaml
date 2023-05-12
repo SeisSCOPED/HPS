@@ -195,7 +195,7 @@ tabs:
 
 
 
-  - time: 1:00 PM - 2:00 PM
+  - time: 1:00 PM - 2:30 PM
     location: Zoom Room
     title:  SCEC Community Models and Access Methods and Tools
     description: Tutorial on accessing the SCEC community X models (CFM, CVM, GFM, CTM)
@@ -205,7 +205,7 @@ tabs:
       - title: "HPS CyberTraining: SCEC CXM"
         url: https://docs.google.com/presentation/d/1Sa--r6uoQViKPdi_HUfXPo4WWMBdyNnX/edit
 
-  - time: 2:00 PM - 3:00 PM
+  - time: 2:30 PM - 3:00 PM
     location: Off Zoom Room
     title:  Coffee Break
     description: Coffee Break
