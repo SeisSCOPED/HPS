@@ -254,8 +254,9 @@ tabs:
     leads: 
     -  Ian Wang 
     resources:
-      - title: "HPS CyberTraining: HPC on Frontera"
+      - title: "Getting Started with Frontera"
         url: https://drive.google.com/file/d/1KmJGmuBMKLlHPjPlq0nhMknykzapB4Dk/view?usp=sharing
+
 
   - time: 2:00 PM - 5:00 PM
     location: Zoom Room
