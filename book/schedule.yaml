@@ -234,12 +234,22 @@ tabs:
   - time: 9:00 AM - 12:00 PM
     location: Zoom Room
     title:  SeisSol
-    description: Earthquake Dynamics in 3D, tutorial on SeisSol
+    description: HPS CyberTraining: Modeling 3D Earthquake Dynamics using SeisSol
     leads: 
-    - Alice Gabriel
+    - Alice Gabriel, Sebastian Wolf, Nico Schliwa
     resources:
-      - title: "HPS CyberTraining: SeisSol"
+      - title: "Introduction to 3D Dynamic Rupture Simulations and SeisSol - Alice Gabriel"
+        url: https://drive.google.com/file/d/12L75SqMaMBm8vhpARj3lBVdNv9CbbLEk/view?usp=share_link
+      - title: "My first 3D Dynamic Rupture Simulation - Sebastian Wolf"
         url: # link to google slides and link to youtube channel
+      - title: "3D kinematic simulations: The 1994 Northridge earthquake - Nico Schliwa"
+        url: https://docs.google.com/presentation/d/1vHsMeWhiKHhCPEUkzk8EzmN1P0SapRelL6Obrmdyf5c/edit?usp=share_link
+      - title: "3D dynamic rupture simulations of the 2018 Palu, Sulawesi earthquake - Alice Gabriel"
+        url: https://drive.google.com/file/d/1DBdgsxut__YM3CXd1Bj3Qa2aCw6X3Uzs/view?usp=share_link
+      - title: "Northridge Example output"
+        url: https://drive.google.com/file/d/1vgKqFhgqgIZfIw4spvU59NIa9OOiHSfp/view?usp=share_link
+      - title: "Palu, Sulawesi Example output"
+        url: 
 
 
   - time: 12:00 PM - 1:00 PM
