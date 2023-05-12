@@ -161,7 +161,7 @@ tabs:
     resources:
       - title: "Installation Guide"
         url: https://drive.google.com/file/d/14PQm1Nc1zvcm53VbydHLBpGpC-blYCbu/view?usp=share_link
-        
+
   - time: 9:00 AM - 10:00 AM
     location: Zoom Room
     title:  SCEC PyCSEP
@@ -266,8 +266,7 @@ tabs:
     -  Bryant Chow
     resources:
       - title: "HPS CyberTraining: SPECFEM"
-        url: # link to google slides and link to youtube channel
-
+        url: https://docs.google.com/presentation/d/1hPsmhaJCnAS4mrO-VS2hr3jax-vjR-stfYDx9cPwdMw/edit?usp=sharing
 
 - title: Day N+1
   date: Friday May 22?
