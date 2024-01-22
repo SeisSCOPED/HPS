@@ -347,9 +347,9 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#before-the-2023-workshop">
+      <a class="reference internal nav-link" href="#specific-to-workshops">
        <strong>
-        Before the 2023 workshop
+        Specific to workshops
        </strong>
        :
       </a>
@@ -379,8 +379,8 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#running-jupyter-nobooks">
-     Running Jupyter Nobooks
+    <a class="reference internal nav-link" href="#running-jupyter-notebooks">
+     Running Jupyter Notebooks
     </a>
    </li>
    <li class="toc-h2 nav-item toc-entry">
@@ -436,9 +436,9 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#before-the-2023-workshop">
+      <a class="reference internal nav-link" href="#specific-to-workshops">
        <strong>
-        Before the 2023 workshop
+        Specific to workshops
        </strong>
        :
       </a>
@@ -468,8 +468,8 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#running-jupyter-nobooks">
-     Running Jupyter Nobooks
+    <a class="reference internal nav-link" href="#running-jupyter-notebooks">
+     Running Jupyter Notebooks
     </a>
    </li>
    <li class="toc-h2 nav-item toc-entry">
@@ -504,12 +504,12 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="what-is-cloud-computing">
 <h2>What is Cloud Computing<a class="headerlink" href="#what-is-cloud-computing" title="Permalink to this headline">¶</a></h2>
 <p>Here will we post the google slides of the basics of Cloud computing (Naomi and Rob).</p>
-<p>Here we will post the youtube video of the deonstration.</p>
+<p>Here we will post the youtube video of the demonstration.</p>
 </div>
 <div class="section" id="web-console-access">
 <h2>Web Console Access<a class="headerlink" href="#web-console-access" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="before-the-2023-workshop">
-<h3><strong>Before the 2023 workshop</strong>:<a class="headerlink" href="#before-the-2023-workshop" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="specific-to-workshops">
+<h3><strong>Specific to workshops</strong>:<a class="headerlink" href="#specific-to-workshops" title="Permalink to this headline">¶</a></h3>
 <ol class="simple">
 <li><p>log in with your designated IAM User to this console: <a class="reference external" href="https://806812320051.signin.aws.amazon.com/console">https://806812320051.signin.aws.amazon.com/console</a></p></li>
 <li><p>Choose the username that was decided by you and the workshop admin (IAM user nae account).</p></li>
@@ -530,21 +530,22 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="launching-an-instance">
 <h3>Launching an instance<a class="headerlink" href="#launching-an-instance" title="Permalink to this headline">¶</a></h3>
 <p>Launch an instance using EC2 (Elastic Computing Cloud). Follow the steps below. Screen shots of the steps are linked [here](url for google slides)</p>
-<ol class="simple">
+<p><img alt="Launch an Instance" src="../_images/launch_ec2_ss.jpg" /></p>
+<ol>
 <li><p>Choose a default <strong>instance OS</strong>: <code class="docutils literal notranslate"><span class="pre">Amazon</span> <span class="pre">linux</span></code></p></li>
 <li><p><strong>Name and tags</strong>: Be specific for best job anaageent: <code class="docutils literal notranslate"><span class="pre">FirstName_LastName_jobname</span></code></p></li>
 <li><p><strong>Instance type</strong>: t2.micro</p></li>
 <li><p><strong>Key pair</strong>: create a new key pair. Download the .pem file, move it to a location that you can have access to and remember where it is. If the file does not save as .pem, replace the extension with .pem. If you use a windows computer, you might need a ppk</p></li>
+<li><p><strong>Network Setting</strong>: <code class="docutils literal notranslate"><span class="pre">Allow</span> <span class="pre">SSH</span> <span class="pre">traffic</span> <span class="pre">from</span> </code> -&gt; <code class="docutils literal notranslate"><span class="pre">My</span> <span class="pre">IP</span></code>.</p></li>
 <li><p>Use <strong>existing security group</strong>, use default.</p></li>
 <li><p>In <strong>Advanced Details</strong>, choose a <code class="docutils literal notranslate"><span class="pre">Spot</span> <span class="pre">instance</span></code>. Spot instances are discounted instances from unused EC2 capacities. Most seismology can be ran on Spot.</p></li>
 <li><p>The rest is default and <strong>launch it</strong>. Now the instance is launched, use the console to check.</p></li>
 <li><p><strong>View instance</strong>, click on it -&gt; Right click -&gt;  connect -&gt; SSH client. We will only go through step 3 and copying the ssh command line.</p></li>
-<li><p>Change the permission to your local PEM/PPK file to only readibly to you. Use terminal and change the permission by going into the folder where the PEM/PPK file:</p></li>
-</ol>
+<li><p>Change the permission to your local PEM/PPK file to only readibly to you. Use terminal and change the permission by going into the folder where the PEM/PPK file:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod <span class="m">400</span> file.pem
 </pre></div>
 </div>
-<ol>
+</li>
 <li><p>Login to the Instance</p>
 <p>a. On <strong>Linux</strong>, copy the ssh link command in the folder where the PEM file is below and ssh to the instance.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh -i <span class="s2">&quot;file.pem&quot;</span> ec2-user@ec2.IPADDRESS
@@ -579,7 +580,7 @@ bash
 <p>Now you can install your software! Clone your repository, install your environment, run your scripts. We will illustrate with the example</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/SeisSCOPED/seis_cloud
 <span class="nb">cd</span> seis_cloud
-conda create -y -n seiscloud <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.8 pip
+conda create -y -n seiscloud <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.12 pip
 conda activate seiscloud
 pip install -r requirements.txt
 </pre></div>
@@ -596,8 +597,8 @@ pip install -r requirements.txt
 </pre></div>
 </div>
 </div>
-<div class="section" id="running-jupyter-nobooks">
-<h2>Running Jupyter Nobooks<a class="headerlink" href="#running-jupyter-nobooks" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="running-jupyter-notebooks">
+<h2>Running Jupyter Notebooks<a class="headerlink" href="#running-jupyter-notebooks" title="Permalink to this headline">¶</a></h2>
 <p>To get the jupyter notebook running:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter notebook --ip <span class="m">0</span>.0.0.0
 </pre></div>
