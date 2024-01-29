@@ -503,8 +503,8 @@ const thebe_selector_output = ".output, .cell_output"
 <p>This tutorial will walk you thought getting on an AWS cloud instance from the ground up.</p>
 <div class="section" id="what-is-cloud-computing">
 <h2>What is Cloud Computing<a class="headerlink" href="#what-is-cloud-computing" title="Permalink to this headline">¶</a></h2>
-<p>Here will we post the google slides of the basics of Cloud computing (Naomi and Rob).</p>
-<p>Here we will post the youtube video of the demonstration.</p>
+<p><a class="reference external" href="https://docs.google.com/presentation/d/1E9_nGlHW8Rz2g4UrQMXyRVZ1UoxuSNejGmszf-OVDrI/edit?usp=drive_link">Presentation</a> from Naomi Alterman (UW) and Rob Fatland (UW) and their video tutorial:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/S6X10HZDyrA?si=xMuZC5-VqMJjU9Rz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 <div class="section" id="web-console-access">
 <h2>Web Console Access<a class="headerlink" href="#web-console-access" title="Permalink to this headline">¶</a></h2>
@@ -529,11 +529,15 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <div class="section" id="launching-an-instance">
 <h3>Launching an instance<a class="headerlink" href="#launching-an-instance" title="Permalink to this headline">¶</a></h3>
-<p>Launch an instance using EC2 (Elastic Computing Cloud). Follow the steps below. Screen shots of the steps are linked [here](url for google slides)</p>
+<p>Launch an instance using EC2 (Elastic Computing Cloud). Follow the steps below. Screen shots of the steps are linked <a class="reference external" href="https://docs.google.com/presentation/d/1L49N8OL8vscjOkERC32l7H6K9IS-EeXOf6qerNEYxPs/edit?usp=sharing">here</a></p>
+<ol class="simple">
+<li><p>In the AWS Management Console, navigate to the EC2 dashboard.</p></li>
+<li><p>Click on “Launch Instance” to start the process of creating a new EC2 instance.</p></li>
+</ol>
 <p><img alt="Launch an Instance" src="../_images/launch_ec2_ss.jpg" /></p>
 <ol>
-<li><p>Choose a default <strong>instance OS</strong>: <code class="docutils literal notranslate"><span class="pre">Amazon</span> <span class="pre">linux</span></code></p></li>
-<li><p><strong>Name and tags</strong>: Be specific for best job anaageent: <code class="docutils literal notranslate"><span class="pre">FirstName_LastName_jobname</span></code></p></li>
+<li><p>Choose a default <strong>instance OS</strong>: <code class="docutils literal notranslate"><span class="pre">Amazon</span> <span class="pre">linux</span></code>. You may also choose an Amazon Machine Image (AMI).</p></li>
+<li><p><strong>Name and tags</strong>: Be specific for best job management: <code class="docutils literal notranslate"><span class="pre">FirstName_LastName_jobname</span></code></p></li>
 <li><p><strong>Instance type</strong>: t2.micro</p></li>
 <li><p><strong>Key pair</strong>: create a new key pair. Download the .pem file, move it to a location that you can have access to and remember where it is. If the file does not save as .pem, replace the extension with .pem. If you use a windows computer, you might need a ppk</p></li>
 <li><p><strong>Network Setting</strong>: <code class="docutils literal notranslate"><span class="pre">Allow</span> <span class="pre">SSH</span> <span class="pre">traffic</span> <span class="pre">from</span> </code> -&gt; <code class="docutils literal notranslate"><span class="pre">My</span> <span class="pre">IP</span></code>.</p></li>
