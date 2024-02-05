@@ -29,6 +29,7 @@ parts:
   chapters:
     - file: softhardware/index
     - file: softhardware/AWS_101
+    - file: softhardware/AWS_S3
 
 
 - caption: Ambient Noise
