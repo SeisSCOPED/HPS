@@ -31,6 +31,9 @@ parts:
     - file: softhardware/AWS_101
     - file: softhardware/AWS_S3
     - file: softhardware/AWS_EC2Batch
+    - file: softhardware/AWS_lambda
+    - file: softhardware/AWS_db
+    - file: softhardware/coiled
 
 
 - caption: Ambient Noise
