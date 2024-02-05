@@ -39,6 +39,7 @@ parts:
 - caption: Ambient Noise
   chapters:
     - file: ambient_noise/noisepy
+    - file: ambient_noise/coiled_aws
 # - caption: Tutorials
   # chapters:
     # - file: tutorials/index
