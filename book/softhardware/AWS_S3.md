@@ -29,11 +29,18 @@ AWS provides a powerful command-line interface (CLI) that allows users to intera
     aws configure
     ```
 
+    Follow the prompts to input your AWS Access Key ID, Secret Access Key, default region, and output format.
+
+- **Test access with public bucket:**
+    ```bash
+    aws s3 ls s3://scedc-pds/
+    ```
+
 - **Create a Bucket:**
     ```bash
     aws s3 mb s3://your-bucket-name
     ```
-Buckets should use lowercase and dash.
+    Buckets should use lowercase and dash.
 
 - **List Buckets:**
     ```bash
@@ -80,7 +87,8 @@ Policies on buckets are critical to allow roles (users and compute) to read-writ
             "Resource": "arn:aws:s3:::your-bucket-name/*"
         }
     ]
-}```
+} 
+```
 
 
 Make sure to replace ``your-bucket-name``` with the actual name of your S3 bucket and ``YOUR_ACCOUNT_ID``` with your AWS account ID.
@@ -94,14 +102,16 @@ The second statement allows specific actions (```"s3:PutObject"```,``` "s3:PutOb
 This policy ensures that public reads are allowed, while only authorized users (the account owner in this case) can perform write operations. Note that allowing public read access means that anyone with the object URL can access it, so use this configuration carefully and avoid placing sensitive information in the bucket.
 
 
-Follow the prompts to input your AWS Access Key ID, Secret Access Key, default region, and output format.
 
-
+## 5. Preparing an S3 bucket for Noisepy
 
 Noisepy uses S3/Cloudstore to store the cross correlations and stacked data. For this step, it is important that your **user/role** and the **bucket** have the appropriate permissions for users to read/write into the bucket.
 
 In the browser, please add the following policy to the bucket:
-```
+```json
+{
+    "Version": "2012-10-17",
+    "Id": "Policy167483
 {
     "Version": "2012-10-17",
     "Id": "Policy1674832359797",
@@ -119,11 +129,11 @@ In the browser, please add the following policy to the bucket:
 }
 ```
 In order to check whether the user can read/write in the bucket, we recommend testing from local:
-```
+```bash
 aws s3 ls s3://<BUCKET-NAME>
 ```
 Add a temporary file to make sure you have the credentials to add to the bucket
-```
+```bash
 aws s3 cp temp s3://<BUCKET-NAME>
 ```
 
