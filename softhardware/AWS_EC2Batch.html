@@ -1,0 +1,675 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AWS EC2 Batch &#8212; HPS CyberTraining</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="NoisePy" href="../ambient_noise/noisepy.html" />
+    <link rel="prev" title="AWS S3" href="AWS_S3.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">HPS CyberTraining</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to HPS CyberTraining!
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Workshop Details
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../application.html">
+   Application
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://seisscoped.org/HPS/index.html?jump_to=schedule">
+   Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://seisscoped.org/HPS/index.html?jump_to=team">
+   Team
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../get-started.html">
+   Preparation Necessary for the workshop
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../mission.html">
+   HPS CyberTraining Mission
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../CoC.html">
+   Event Code of Conduct
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Preliminary Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../preliminary/index.html">
+   Preliminary Coding Work
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../preliminary/swc.html">
+     Software Carpentry Training
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../preliminary/github.html">
+     GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../preliminary/jupyterhub.html">
+     JupyterHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../preliminary/git.html">
+     Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../preliminary/python.html">
+     Python Installation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminary_seismo/index.html">
+   Preliminary Seismology
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  CyberInfrastructure
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   Intro
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AWS_101.html">
+   AWS 101
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AWS_S3.html">
+   AWS S3
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   AWS EC2 Batch
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Ambient Noise
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ambient_noise/noisepy.html">
+   NoisePy
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Reference
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/glossary.html">
+   Glossaries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/bibliography.html">
+   Bibliography
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/open_science.html">
+   Open Science
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/open_source_software.html">
+   Open-source Software
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/questions.html">
+   How to Get Help
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/softhardware/AWS_EC2Batch.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/SeisSCOPED/HPS/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/SeisSCOPED/HPS//issues/new?title=Issue%20on%20page%20%2Fsofthardware/AWS_EC2Batch.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/SeisSCOPED/HPS/edit/main/book/softhardware/AWS_EC2Batch.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-role">
+   1. Create role
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-a-compute-environment">
+   2. Create a Compute Environment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-a-job-queue">
+   3. Create a Job queue
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-a-job-definition">
+   4. Create a Job Definition
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submit-a-job">
+   4. Submit a job
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submit-a-stacking-job">
+   Submit a Stacking job
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>AWS EC2 Batch</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-role">
+   1. Create role
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-a-compute-environment">
+   2. Create a Compute Environment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-a-job-queue">
+   3. Create a Job queue
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-a-job-definition">
+   4. Create a Job Definition
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submit-a-job">
+   4. Submit a job
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submit-a-stacking-job">
+   Submit a Stacking job
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="aws-ec2-batch">
+<h1>AWS EC2 Batch<a class="headerlink" href="#aws-ec2-batch" title="Permalink to this headline">¶</a></h1>
+<p>Here’s a short tutorial on using Amazon EC2 Batch with Fargate Spot and containers to perform a job that involves writing and reading from Amazon S3:</p>
+<p>The below steps require <a class="reference external" href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html">setting up the AWS CLI</a> as well as the <a class="reference external" href="https://jqlang.github.io/jq/download/">jq tool</a> (optional).</p>
+<div class="section" id="create-role">
+<h2>1. Create role<a class="headerlink" href="#create-role" title="Permalink to this headline">¶</a></h2>
+<p>AWS batch requires an IAM role to be created <em>for running the jobs</em>. This can be done from the IAM webconsole.</p>
+<p>Create a role using the following options:</p>
+<ul class="simple">
+<li><p>Trusted Entity Type: AWS Service</p></li>
+<li><p>Use Case: Elastic Container Service</p>
+<ul>
+<li><p>Elastic Container Service Task</p></li>
+</ul>
+</li>
+</ul>
+<p>On the next page, search for and add:</p>
+<ul class="simple">
+<li><p>AmazonECSTaskExecutionRolePolicy</p></li>
+<li><p>AmazonS3FullAccess</p></li>
+</ul>
+<p>Once the role is created, one more permission is needed:</p>
+<ul class="simple">
+<li><p>Go to: Permissions tab –&gt; Add Permissions –&gt; Create inline policy</p></li>
+<li><p>Search for “batch”</p></li>
+<li><p>Click on <strong>Batch</strong></p></li>
+<li><p>Select Read / Describe Jobs</p></li>
+<li><p>Click Next</p></li>
+<li><p>Add a poolicy name, e.g. “Describe_Batch_Jobs”</p></li>
+<li><p>Click Create Policy</p></li>
+</ul>
+<p>Finally, go to the S3 bucket where you’ll be writing the results of the jobs.
+Open the Permissions tab and add a statement to the bucket policy granting full access to the role you
+just created:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="w">		</span><span class="p">{</span><span class="w"></span>
+<span class="w">			</span><span class="nt">&quot;Sid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Statement3&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">			</span><span class="nt">&quot;Principal&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">			    </span><span class="nt">&quot;AWS&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;arn:...your job role ARN.&quot;</span><span class="w"></span>
+<span class="w">			</span><span class="p">},</span><span class="w"></span>
+<span class="w">			</span><span class="nt">&quot;Effect&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Allow&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">			</span><span class="nt">&quot;Action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;s3:*&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">			</span><span class="nt">&quot;Resource&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;arn:...your bucket ARN.&quot;</span><span class="w"></span>
+<span class="w">		</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Note that the job role ARN will be in the format of <code class="docutils literal notranslate"><span class="pre">arn:aws:iam::&lt;YOUR_ACCOUNT_ID&gt;:role/&lt;JOB_ROLE_NAME&gt;</span></code>. The bucket ARN will be in the format of <code class="docutils literal notranslate"><span class="pre">arn:aws:s3:::&lt;YOUR_S3_BUCKET&gt;</span></code>.</p>
+</div>
+<div class="section" id="create-a-compute-environment">
+<h2>2. Create a Compute Environment<a class="headerlink" href="#create-a-compute-environment" title="Permalink to this headline">¶</a></h2>
+<p>You’ll need two pieces of information to create the compute environment. The list of subnets in your VPC and the default security group ID. You can use the following commands to retrieve them:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aws</span> <span class="n">ec2</span> <span class="n">describe</span><span class="o">-</span><span class="n">subnets</span>  <span class="o">|</span> <span class="n">jq</span> <span class="s2">&quot;.Subnets[] | .SubnetId&quot;</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aws</span> <span class="n">ec2</span> <span class="n">describe</span><span class="o">-</span><span class="n">security</span><span class="o">-</span><span class="n">groups</span> <span class="o">--</span><span class="n">filters</span> <span class="s2">&quot;Name=group-name,Values=default&quot;</span> <span class="o">|</span> <span class="n">jq</span> <span class="s2">&quot;.SecurityGroups[0].GroupId&quot;</span>
+</pre></div>
+</div>
+<p>We design the computing environment in a YAML file</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">computeEnvironmentName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&#39;</span><span class="w">  </span><span class="c1"># [REQUIRED] The name for your compute environment.</span><span class="w"></span>
+<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MANAGED</span><span class="w"></span>
+<span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENABLED</span><span class="w"></span>
+<span class="nt">computeResources</span><span class="p">:</span><span class="w"> </span><span class="c1"># Details about the compute resources managed by the compute environment.</span><span class="w"></span>
+<span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FARGATE</span><span class="w"></span>
+<span class="w">  </span><span class="nt">maxvCpus</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">256</span><span class="w"> </span><span class="c1"># [REQUIRED] The maximum number of Amazon EC2 vCPUs that a compute environment can reach.</span><span class="w"></span>
+<span class="w">  </span><span class="nt">subnets</span><span class="p">:</span><span class="w"> </span><span class="c1"># [REQUIRED] The VPC subnets where the compute resources are launched.</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">securityGroupIds</span><span class="p">:</span><span class="w"> </span><span class="c1"># [REQUIRED] The Amazon EC2 security groups that are associated with instances launched in the compute environment.</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;&#39;</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Use this values to update the missing fields in <code class="docutils literal notranslate"><span class="pre">compute_environment.yaml</span></code> and the run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aws</span> <span class="n">batch</span> <span class="n">create</span><span class="o">-</span><span class="n">compute</span><span class="o">-</span><span class="n">environment</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">cli</span><span class="o">-</span><span class="n">pager</span> <span class="o">--</span><span class="n">cli</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="n">yaml</span> <span class="n">file</span><span class="p">:</span><span class="o">//</span><span class="n">compute_environment</span><span class="o">.</span><span class="n">yaml</span>
+</pre></div>
+</div>
+<p>Make a note of the compute environment ARN to use in the next step.</p>
+</div>
+<div class="section" id="create-a-job-queue">
+<h2>3. Create a Job queue<a class="headerlink" href="#create-a-job-queue" title="Permalink to this headline">¶</a></h2>
+<p>Add the compute environment and a name to <code class="docutils literal notranslate"><span class="pre">job_queue.yaml</span></code> as the folling file:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">jobQueueName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&#39;</span><span class="w">  </span><span class="c1"># [REQUIRED] The name of the job queue.</span><span class="w"></span>
+<span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENABLED</span><span class="w"></span>
+<span class="nt">priority</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span><span class="w"></span>
+<span class="nt">computeEnvironmentOrder</span><span class="p">:</span><span class="w"> </span><span class="c1"># [REQUIRED] The set of compute environments mapped to a job queue and their order relative to each other.</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">order</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span><span class="w">  </span><span class="c1"># [REQUIRED] The order of the compute environment.</span><span class="w"></span>
+<span class="w">  </span><span class="nt">computeEnvironment</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&#39;</span><span class="w"> </span><span class="c1"># [REQUIRED] The Amazon Resource Name (ARN) of the compute environment.</span><span class="w"></span>
+</pre></div>
+</div>
+<p>and then run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aws</span> <span class="n">batch</span> <span class="n">create</span><span class="o">-</span><span class="n">job</span><span class="o">-</span><span class="n">queue</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">cli</span><span class="o">-</span><span class="n">pager</span> <span class="o">--</span><span class="n">cli</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="n">yaml</span> <span class="n">file</span><span class="p">:</span><span class="o">//</span><span class="n">job_queue</span><span class="o">.</span><span class="n">yaml</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="create-a-job-definition">
+<h2>4. Create a Job Definition<a class="headerlink" href="#create-a-job-definition" title="Permalink to this headline">¶</a></h2>
+<p>Update the <code class="docutils literal notranslate"><span class="pre">jobRoleArn</span></code> and <code class="docutils literal notranslate"><span class="pre">executionRoleArn</span></code> fields in the <code class="docutils literal notranslate"><span class="pre">job_definition.yaml</span></code> file with the ARN of the role created in the first step:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">jobDefinitionName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&#39;</span><span class="w">  </span><span class="c1"># [REQUIRED] The name of the job definition to register.</span><span class="w"></span>
+<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">container</span><span class="w"></span>
+<span class="nt">platformCapabilities</span><span class="p">:</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FARGATE</span><span class="w"></span>
+<span class="nt">containerProperties</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;ghcr.io/noisepy/noisepy&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">command</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;--help&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">jobRoleArn</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">executionRoleArn</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">resourceRequirements</span><span class="p">:</span><span class="w"> </span><span class="c1"># The type and amount of resources to assign to a container.</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;16&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VCPU</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;32768&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MEMORY</span><span class="w"></span>
+<span class="w">  </span><span class="nt">networkConfiguration</span><span class="p">:</span><span class="w"> </span><span class="c1"># The network configuration for jobs that are running on Fargate resources.</span><span class="w"></span>
+<span class="w">    </span><span class="nt">assignPublicIp</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ENABLED</span><span class="w">  </span><span class="c1"># Indicates whether the job has a public IP address. Valid values are: ENABLED, DISABLED.</span><span class="w"></span>
+<span class="w">  </span><span class="nt">ephemeralStorage</span><span class="p">:</span><span class="w"> </span><span class="c1"># The amount of ephemeral storage to allocate for the task.</span><span class="w"></span>
+<span class="w">    </span><span class="nt">sizeInGiB</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">21</span><span class="w">  </span><span class="c1"># [REQUIRED] The total amount, in GiB, of ephemeral storage to set for the task.</span><span class="w"></span>
+<span class="nt">retryStrategy</span><span class="p">:</span><span class="w"> </span><span class="c1"># The retry strategy to use for failed jobs that are submitted with this job definition.</span><span class="w"></span>
+<span class="w">  </span><span class="nt">attempts</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span><span class="w">  </span><span class="c1"># The number of times to move a job to the RUNNABLE status.</span><span class="w"></span>
+<span class="nt">propagateTags</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"> </span><span class="c1"># Specifies whether to propagate the tags from the job or job definition to the corresponding Amazon ECS task.</span><span class="w"></span>
+<span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="c1"># The timeout configuration for jobs that are submitted with this job definition, after which Batch terminates your jobs if they have not finished.</span><span class="w"></span>
+<span class="w">  </span><span class="nt">attemptDurationSeconds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">36000</span><span class="w">  </span><span class="c1"># The job timeout time (in seconds) that&#39;s measured from the job attempt&#39;s startedAt timestamp.</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Add a name for the <code class="docutils literal notranslate"><span class="pre">jobDefinition</span></code>. Finally, run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aws</span> <span class="n">batch</span> <span class="n">register</span><span class="o">-</span><span class="n">job</span><span class="o">-</span><span class="n">definition</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">cli</span><span class="o">-</span><span class="n">pager</span> <span class="o">--</span><span class="n">cli</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="n">yaml</span> <span class="n">file</span><span class="p">:</span><span class="o">//</span><span class="n">job_definition</span><span class="o">.</span><span class="n">yaml</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="submit-a-job">
+<h2>4. Submit a job<a class="headerlink" href="#submit-a-job" title="Permalink to this headline">¶</a></h2>
+<p>We will take the example of noisepy. Update <code class="docutils literal notranslate"><span class="pre">job_cc.yaml</span></code> with the names of your <code class="docutils literal notranslate"><span class="pre">jobQueue</span></code> and <code class="docutils literal notranslate"><span class="pre">jobDefinition</span></code> created in the last steps:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">jobName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;noisepy-cross-correlate&#39;</span><span class="w"></span>
+<span class="nt">jobQueue</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&#39;</span><span class="w"></span>
+<span class="nt">jobDefinition</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&#39;</span><span class="w"> </span><span class="c1"># [REQUIRED] The job definition used by this job.</span><span class="w"></span>
+<span class="c1"># Uncomment to run a job across multiple nodes. The days in the time range will be split across the nodes.</span><span class="w"></span>
+<span class="c1"># arrayProperties:</span><span class="w"></span>
+<span class="c1">#   size: 16  # number of nodes</span><span class="w"></span>
+<span class="nt">containerOverrides</span><span class="p">:</span><span class="w"> </span><span class="c1"># An object with various properties that override the defaults for the job definition that specify the name of a container in the specified job definition and the overrides it should receive.</span><span class="w"></span>
+<span class="w">  </span><span class="nt">resourceRequirements</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;90112&#39;</span><span class="w"> </span><span class="c1"># CC requires more memory</span><span class="w"></span>
+<span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MEMORY</span><span class="w"></span>
+<span class="w">  </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="c1"># The command to send to the container that overrides the default command from the Docker image or the job definition.</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cross_correlate</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--raw_data_path=s3://scedc-pds/continuous_waveforms/</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--xml_path=s3://scedc-pds/FDSNstationXML/CI/</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--ccf_path=s3://&lt;YOUR_S3_BUCKET&gt;/&lt;CC_PATH&gt;</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--config=s3://&lt;YOUR_S3_BUCKET&gt;/&lt;CONFIG_PATH&gt;/config.yaml</span><span class="w"></span>
+<span class="nt">timeout</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">attemptDurationSeconds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">36000</span><span class="w">  </span><span class="c1"># 10 hrs</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Then update the S3 bucket paths to the locations you want to use for the output and your <code class="docutils literal notranslate"><span class="pre">config.yaml</span></code> file.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aws</span> <span class="n">batch</span> <span class="n">submit</span><span class="o">-</span><span class="n">job</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">cli</span><span class="o">-</span><span class="n">pager</span> <span class="o">--</span><span class="n">cli</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="n">yaml</span> <span class="n">file</span><span class="p">:</span><span class="o">//</span><span class="n">job_cc</span><span class="o">.</span><span class="n">yaml</span> <span class="o">--</span><span class="n">job</span><span class="o">-</span><span class="n">name</span> <span class="s2">&quot;&lt;your job name&gt;&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="submit-a-stacking-job">
+<h2>Submit a Stacking job<a class="headerlink" href="#submit-a-stacking-job" title="Permalink to this headline">¶</a></h2>
+<p>Update <code class="docutils literal notranslate"><span class="pre">job_stack.yaml</span></code> with the names of your <code class="docutils literal notranslate"><span class="pre">jobQueue</span></code> and <code class="docutils literal notranslate"><span class="pre">jobDefinition</span></code> created in the last steps.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">jobName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;noisepy-stack&#39;</span><span class="w"></span>
+<span class="nt">jobQueue</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&#39;</span><span class="w"></span>
+<span class="nt">jobDefinition</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&#39;</span><span class="w"> </span><span class="c1"># [REQUIRED] The job definition used by this job.</span><span class="w"></span>
+<span class="c1"># Uncomment to run a job across multiple nodes. The station pairs to be stacked will be split across the nodes.</span><span class="w"></span>
+<span class="c1"># arrayProperties:</span><span class="w"></span>
+<span class="c1">#   size: 16  # number of nodes</span><span class="w"></span>
+<span class="nt">containerOverrides</span><span class="p">:</span><span class="w"> </span><span class="c1"># An object with various properties that override the defaults for the job definition that specify the name of a container in the specified job definition and the overrides it should receive.</span><span class="w"></span>
+<span class="w">  </span><span class="nt">resourceRequirements</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;32768&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MEMORY</span><span class="w"></span>
+<span class="w">  </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="c1"># The command to send to the container that overrides the default command from the Docker image or the job definition.</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stack</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--ccf_path=s3://&lt;YOUR_S3_BUCKET&gt;/&lt;CC_PATH&gt;</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--stack_path=s3://&lt;YOUR_S3_BUCKET&gt;/&lt;STACK_PATH&gt;</span><span class="w"></span>
+<span class="nt">timeout</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">attemptDurationSeconds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">7200</span><span class="w">  </span><span class="c1"># 2 hrs</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Then update the S3 bucket paths
+to the locations you want to use for your input CCFs (e.g. the output of the previous CC run), and the stack output. By default, NoisePy will look for a config file in the <code class="docutils literal notranslate"><span class="pre">--ccf_path</span></code> location to use the same configuration for stacking that was used for cross-correlation.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aws</span> <span class="n">batch</span> <span class="n">submit</span><span class="o">-</span><span class="n">job</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">cli</span><span class="o">-</span><span class="n">pager</span> <span class="o">--</span><span class="n">cli</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="n">yaml</span> <span class="n">file</span><span class="p">:</span><span class="o">//</span><span class="n">job_stack</span><span class="o">.</span><span class="n">yaml</span> <span class="o">--</span><span class="n">job</span><span class="o">-</span><span class="n">name</span> <span class="s2">&quot;&lt;your job name&gt;&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./softhardware"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="AWS_S3.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">AWS S3</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../ambient_noise/noisepy.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">NoisePy</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Marine Denolle, eScience Institute, University of Washington<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
