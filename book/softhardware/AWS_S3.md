@@ -1,7 +1,7 @@
 # AWS S3
-
+**Introduction to AWS S3, Buckets, Bucket Policies, and CLI Usage** 
 Amazon Simple Storage Service (S3) is a scalable object storage service offered by Amazon Web Services (AWS). It allows users to store and retrieve any amount of data from anywhere on the web. S3 is designed for durability, availability, and scalability, making it a reliable solution for storing and managing data in the cloud.
-# Introduction to AWS S3, Buckets, Bucket Policies, and CLI Usage
+
 
 ## 1. What is AWS S3?
 
@@ -62,6 +62,8 @@ AWS provides a powerful command-line interface (CLI) that allows users to intera
 - **Bucket Policy:**
 Policies on buckets are critical to allow roles (users and compute) to read-write on a bucket. For example, we want to create an S3 bucket policy that allows private writes (only authorized users can upload objects) and public reads (objects are publicly accessible), you can use the following example. This policy allows any AWS user to list the objects in the bucket and retrieve the objects, while restricting the ability to upload or modify objects to authorized users.
 
+The following is an example of a bucket policy that allows public reads and authorized writes:
+
 ```json
 {
     "Version": "2012-10-17",
@@ -91,7 +93,7 @@ Policies on buckets are critical to allow roles (users and compute) to read-writ
 ```
 
 
-Make sure to replace ``your-bucket-name``` with the actual name of your S3 bucket and ``YOUR_ACCOUNT_ID``` with your AWS account ID.
+Make sure to replace ```your-bucket-name``` with the actual name of your S3 bucket and ```YOUR_ACCOUNT_ID``` with your AWS account ID.
 
 Explanation of the policy:
 
@@ -108,15 +110,14 @@ This policy ensures that public reads are allowed, while only authorized users (
 Noisepy uses S3/Cloudstore to store the cross correlations and stacked data. For this step, it is important that your **user/role** and the **bucket** have the appropriate permissions for users to read/write into the bucket.
 
 In the browser, please add the following policy to the bucket:
+
+
 ```json
-{
-    "Version": "2012-10-17",
-    "Id": "Policy167483
 {
     "Version": "2012-10-17",
     "Id": "Policy1674832359797",
     "Statement": [
-        {
+            {
             "Sid": "Stmt1674832357905",
             "Effect": "Allow",
             "Principal": {

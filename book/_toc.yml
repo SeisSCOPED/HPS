@@ -30,6 +30,7 @@ parts:
     - file: softhardware/index
     - file: softhardware/AWS_101
     - file: softhardware/AWS_S3
+    - file: softhardware/AWS_EC2Batch
 
 
 - caption: Ambient Noise
