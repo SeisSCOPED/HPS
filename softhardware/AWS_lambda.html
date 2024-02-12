@@ -376,7 +376,14 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="aws-lambda">
 <h1>AWS Lambda<a class="headerlink" href="#aws-lambda" title="Permalink to this headline">¶</a></h1>
-<p>TBD. Examples will be running event detection on lambda</p>
+<p>AWS Lambda is a serverless computing service provided by Amazon Web Services (AWS). It allows to run code without provisioning or managing servers. Instead, Lambda automatically scales the application by running code in response to triggers and events.</p>
+<p>Here’s how it works:</p>
+<ul class="simple">
+<li><p><strong>Event Sources</strong>: Lambda functions are triggered by various events such as changes to data in an S3 bucket, updates to DynamoDB tables, API Gateway requests, SNS notifications, etc.  In seismology, this could be like data streaming to S3, or daily updates of a seismic network on S3.</p></li>
+<li><p><strong>Function Execution</strong>: When an event occurs, Lambda executes the function by spinning up a compute environment, running the code, and then shutting down the environment when the function execution is complete. This could be  event detection, picking, classification, or it could be low-computation of feature extraction in continuous time series</p></li>
+<li><p><strong>Scaling</strong>: Lambda automatically scales to handle a large number of requests. You don’t need to worry about provisioning or managing servers; AWS takes care of this for you.</p></li>
+</ul>
+<p>Lambda supports several programming languages, including Python, Node.js, Java, C#, Go, and Ruby.</p>
 </div>
 
     <script type="text/x-thebe-config">
