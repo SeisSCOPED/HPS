@@ -51,7 +51,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Running NoisePy tutorial with Coiled and AWS" href="coiled_aws.html" />
+    <link rel="next" title="NoisePy tutorial with Coiled" href="coiled_aws.html" />
     <link rel="prev" title="Coiled" href="../softhardware/coiled.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -237,7 +237,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="coiled_aws.html">
-   Running NoisePy tutorial with Coiled and AWS
+   NoisePy tutorial with Coiled
   </a>
  </li>
 </ul>
@@ -402,18 +402,11 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="noisepy">
 <h1>NoisePy<a class="headerlink" href="#noisepy" title="Permalink to this headline">¶</a></h1>
-<p>We will test NoisePy, a python package for ambient noise seismology.
-While the software is currently under active development, we will test its new functionality for cross correlation on the AWS SCEDC data.</p>
+<p>We will test NoisePy, a python package for ambient noise seismology.</p>
+<p>While the software is currently under active development, we will test its new functionality for cross correlation on the AWS SCEDC data.</p>
 <div class="section" id="clone-the-repository">
 <h2>Clone the Repository<a class="headerlink" href="#clone-the-repository" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/mdenolle/NoisePy
-</pre></div>
-</div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda create -n noisepy <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.8 pip
-conda activate noisepy
-conda install -c conda-forge openmpi
-pip install  jupyter
-pip install noisepy-seis -e .<span class="s2">&quot;[dev]&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/noisepy/NoisePy
 </pre></div>
 </div>
 </div>
@@ -454,7 +447,7 @@ pip install noisepy-seis -e .<span class="s2">&quot;[dev]&quot;</span>
     <a class='right-next' id="next-link" href="coiled_aws.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Running NoisePy tutorial with Coiled and AWS</p>
+        <p class="prev-next-title">NoisePy tutorial with Coiled</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

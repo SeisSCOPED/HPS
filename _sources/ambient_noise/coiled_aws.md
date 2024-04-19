@@ -1,4 +1,4 @@
-# Running NoisePy tutorial with Coiled and AWS
+# NoisePy tutorial with Coiled
 
 __Prerequisite__
 0. A laptop with command line tools
