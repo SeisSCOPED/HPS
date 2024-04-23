@@ -614,13 +614,12 @@ pip install -r requirements.txt
 <code class="docutils literal notranslate"><span class="pre">http://PRIVATE_IP.us-west-2.compute.internal:8888/?token=LONG_TOKEN</span></code></p>
 <p>Copy and past the <code class="docutils literal notranslate"><span class="pre">LONG_TOKEN</span></code> in the token window and the jupyter notebook will start.</p>
 <p>There are alternative options to login:</p>
-<ol class="simple">
-<li><p>Forward the ports when login in the instance:</p></li>
-</ol>
+<ol>
+<li><p>Forward the ports when login in the instance:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh -i <span class="s2">&quot;user.pem&quot;</span> user@publicIPaddress -L <span class="m">8888</span>:localhost:8888 -N
 </pre></div>
 </div>
-<ol class="simple">
+</li>
 <li><p>Open a browser and type localhost:8888/</p></li>
 </ol>
 <p><strong>Warning</strong>: we have experienced exception. Safari and Chrome may treat the connection as malware. These are warnings and can be ignored (???) and find a way to continue.</p>
@@ -628,27 +627,26 @@ pip install -r requirements.txt
 <div class="section" id="using-docker-on-ec2">
 <h2>Using Docker on EC2<a class="headerlink" href="#using-docker-on-ec2" title="Permalink to this headline">¶</a></h2>
 <p>You can also run the scripts using the automatically generated Docker image. Note that if you have a Jupyter notebook running on port 8888 before starting Docker, you will need to terminate it before running Docker to avoid port conflicts.</p>
-<ol class="simple">
-<li><p>To install docker, run the following command:</p></li>
-</ol>
+<ol>
+<li><p>To install docker, run the following command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo yum install docker -y
 sudo service docker start
 sudo usermod -a -G docker ec2-user
 docker --version
 </pre></div>
 </div>
-<ol class="simple">
-<li><p>Pull the image. This will pull the Docker image named seis_cloud from the GitHub Container Registry, with the specific tag f041ec0.</p></li>
-</ol>
+</li>
+<li><p>Pull the image. This will pull the Docker image named seis_cloud from the GitHub Container Registry, with the specific tag f041ec0.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo docker pull ghcr.io/seisscoped/seis_cloud:centos7_jupyterlab
 </pre></div>
 </div>
-<ol class="simple">
-<li><p>Run the docker. This will run the seis_cloud image in interactive mode, and forward port 8888 from the container to port 8888 on the EC2 instance. The latest tag will pull the most recent version of the image.</p></li>
-</ol>
+</li>
+<li><p>Run the docker. This will run the seis_cloud image in interactive mode, and forward port 8888 from the container to port 8888 on the EC2 instance. The latest tag will pull the most recent version of the image.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo docker run -p <span class="m">8888</span>:8888 --rm -it ghcr.io/seisscoped/seis_cloud:centos7_jupyterlab
 </pre></div>
 </div>
+</li>
+</ol>
 <p>The jupyter lab will then running at port 8888.</p>
 </div>
 <div class="section" id="save-the-virtual-image-optional">
