@@ -15,7 +15,7 @@ banner:
   year: 2023
   location: Remote
   links:
-  - url: intro.html
+  - url: https://seisscoped.org/HPS-book/intro.html
     title: HPS Jupyter Book
     new_window: false
   image: https://github.com/SeisSCOPED/HPS/blob/main/assets/DASpng.png?raw=true
