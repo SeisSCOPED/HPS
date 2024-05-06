@@ -1,5 +1,9 @@
 # Preliminary Seismology
 
+```{warning}
+This page may not be updated. For the latest HPS book, please visit https://seisscoped.org/HPS-book
+```
+
 The workshop will dive into advanced computing levels starting the second day. We recommend to seismologists to assess their level of comfort in computing in seismological research. We selected several beginner and intermediate tutorials that have been fantastic to get refreshers on computing skills for seismic data and that we recommend.
 
 ```{attention}
