@@ -1,5 +1,8 @@
 # Intro
 
+```{warning}
+This page may not be updated. For the latest HPS book, please visit https://seisscoped.org/HPS-book
+```
 
 In this section, we will review software best practices, open science, reproducible workflows. We will also review how to use HPC resources and Cloud systems.
 
