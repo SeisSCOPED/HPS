@@ -2,6 +2,9 @@
 
 ![banner](img/banner.png)
 
+```{warning}
+This page may not be updated. For the latest HPS book, please visit https://seisscoped.org/HPS-book
+```
 
 📖 On this JupyterBook website, you will find resources for high-performance computing tailored to seismological research. In particular, we talk about two types of large-scale seismological research:
 * Wavefield and earthquake simulations
