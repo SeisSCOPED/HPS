@@ -1,5 +1,9 @@
 # GitHub
 
+```{warning}
+This page may not be updated. For the latest HPS book, please visit https://seisscoped.org/HPS-book
+```
+
 ## What is GitHub?
 [GitHub](https://github.com) is a hosting service for {term}`Git` repositories,
 enabling us to share code across teams in a web environment.

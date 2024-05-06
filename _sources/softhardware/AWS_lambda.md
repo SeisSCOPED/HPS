@@ -1,5 +1,9 @@
 # AWS Lambda
 
+```{warning}
+This page may not be updated. For the latest HPS book, please visit https://seisscoped.org/HPS-book
+```
+
 AWS Lambda is a serverless computing service provided by Amazon Web Services (AWS). It allows to run code without provisioning or managing servers. Instead, Lambda automatically scales the application by running code in response to triggers and events.
 
 Here's how it works:

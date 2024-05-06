@@ -1,5 +1,9 @@
 # Preliminary Coding Work
 
+```{warning}
+This page may not be updated. For the latest HPS book, please visit https://seisscoped.org/HPS-book
+```
+
 We welcome all types of learners to our event, from professional software developers to people just getting started. Based on previous experience, participants gain more from our hackweeks when they arrive having a preliminary understand of some of the foundational tools of data science workflows. These skills include knowing how to:
 
 * Navigate a [Jupyter Notebook](https://jupyter.org/) environment

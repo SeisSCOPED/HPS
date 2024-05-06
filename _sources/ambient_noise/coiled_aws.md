@@ -1,5 +1,9 @@
 # NoisePy tutorial with Coiled
 
+```{warning}
+This page may not be updated. For the latest HPS book, please visit https://seisscoped.org/HPS-book
+```
+
 __Prerequisite__
 0. A laptop with command line tools
 1. Have a running anaconda/miniconda on your laptop.

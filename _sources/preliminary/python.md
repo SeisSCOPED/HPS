@@ -1,5 +1,9 @@
 # Python Installation
 
+```{warning}
+This page may not be updated. For the latest HPS book, please visit https://seisscoped.org/HPS-book
+```
+
 ## Overview
 
 While we will be using a cloud-hosted computing environment during the hackweek

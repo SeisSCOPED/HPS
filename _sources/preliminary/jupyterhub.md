@@ -1,5 +1,9 @@
 # JupyterHub
 
+```{warning}
+This page may not be updated. For the latest HPS book, please visit https://seisscoped.org/HPS-book
+```
+
 (event-jupyterhub)=
 ## Why are we using a shared cloud environment?
 

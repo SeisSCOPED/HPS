@@ -1,4 +1,9 @@
 # AWS S3
+
+```{warning}
+This page may not be updated. For the latest HPS book, please visit https://seisscoped.org/HPS-book
+```
+
 **Introduction to AWS S3, Buckets, Bucket Policies, and CLI Usage** 
 Amazon Simple Storage Service (S3) is a scalable object storage service offered by Amazon Web Services (AWS). It allows users to store and retrieve any amount of data from anywhere on the web. S3 is designed for durability, availability, and scalability, making it a reliable solution for storing and managing data in the cloud.
 

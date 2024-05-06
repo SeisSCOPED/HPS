@@ -1,5 +1,9 @@
 # AWS EC2 Batch
 
+```{warning}
+This page may not be updated. For the latest HPS book, please visit https://seisscoped.org/HPS-book
+```
+
 Here's a short tutorial on using Amazon EC2 Batch with Fargate Spot and containers to perform a job that involves writing and reading from Amazon S3:
 
 The below steps require [setting up the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html) as well as the [jq tool](https://jqlang.github.io/jq/download/) (optional).

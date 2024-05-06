@@ -1,5 +1,9 @@
 # Software Carpentry Training
 
+```{warning}
+This page may not be updated. For the latest HPS book, please visit https://seisscoped.org/HPS-book
+```
+
 [Software Carpentry](https://software-carpentry.org) is a fantastic organization that teaches basic lab skills for research computing.
 
 If you are new to Git, Linux, Python, please set aside a day or two to go over these materials in advance.
