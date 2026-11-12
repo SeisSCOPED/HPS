@@ -8,7 +8,7 @@ This page may not be updated. For the latest HPS book, please visit https://seis
 * Wavefield and earthquake simulations
 * Big Data Mining
 
-Both leverage two computing architectures: HPC and Cloud. This book provides training for best practices in computing andf software environment.
+Both leverage two computing architectures: HPC and Cloud. This book provides training for best practices in computing and software environment.
 
  <!-- you'll find [tutorials](tutorials/index). All tutorials are Jupyter Notebooks, designed to be run interactively, but also rendered on this website for convenience. -->
 

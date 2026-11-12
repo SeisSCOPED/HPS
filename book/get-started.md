@@ -28,7 +28,7 @@ On Windows, you should use
 
 ## **AWS Accounts**
 
-If you have been assigned a cloud account for this workshop, you need to set up AWS accounts prior to the start of the worksop. Contact Marine Denolle or Yiyu Ni via direct message on slack with your prefered username to log in and your preferred email address.
+If you have been assigned a cloud account for this workshop, you need to set up AWS accounts prior to the start of the worksop. Contact Marine Denolle or Yiyu Ni via direct message on slack with your preferred username to log in and your preferred email address.
 
 1. log in with your designated IAM User to this console: https://806812320051.signin.aws.amazon.com/console
 2. Choose the username that was decided by you and the workshop admin (IAM user nae account). 

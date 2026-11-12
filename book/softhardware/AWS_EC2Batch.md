@@ -86,7 +86,7 @@ Make a note of the compute environment ARN to use in the next step.
 
 ## 3. Create a Job queue
 
-Add the compute environment and a name to `job_queue.yaml` as the folling file:
+Add the compute environment and a name to `job_queue.yaml` as the following file:
 
 ```yaml
 jobQueueName: ''  # [REQUIRED] The name of the job queue.
