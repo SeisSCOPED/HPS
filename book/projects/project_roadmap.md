@@ -40,7 +40,7 @@ We facilitate a project team formation session at the end of the first day of th
     * How do you work best? What level of group interaction works for you?
     * What skills and background are you most excited to share with the team?
     * When are you available to meet?
-* set up team computing infrastructure on Slack and GitHub ([Project Initiallization](project_initialization)) 
+* set up team computing infrastructure on Slack and GitHub ([Project Initialization](project_initialization)) 
 * project work begins and teams have regular check-ins to chart progress
 * project outputs are recorded in a GitHub repository
 

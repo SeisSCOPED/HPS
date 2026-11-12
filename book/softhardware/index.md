@@ -56,7 +56,7 @@ One typically 1) chooses the HPC resource, and then 2) moves the data there for 
 
 Cloud computing refers to a system of rather loosely connected nodes. There are many cloud providers, though 3 are on the top list: Amazon Web Services (AWS), Google Cloud Platform (GCP), Microstoft Azure Cloud (Azure). Each of these cloud providers offer a free python Hub access.
 
-Cloud centers are distributed around the world, to enable global fast access to computing resoures. The centers are called `regions`.
+Cloud centers are distributed around the world, to enable global fast access to computing resources. The centers are called `regions`.
 
 Usually, storing data on Clouds is the most expensive of geoscience research. One would typically find the 1) data storage/archive, then 2) choose the cloud provider. For optimal I/O performance, it is recommended to choose the `region` where the data is stored for compute.
 
